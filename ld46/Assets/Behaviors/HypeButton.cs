@@ -65,14 +65,12 @@ public class HypeButton : MonoBehaviour
         UnmuteTrack(track);
         PlayAudio();
         if (instantiate != null) {
-            Debug.Log("Instantiating");
             instance = Instantiate(instantiate);            
         }
         isActive = true;
     }
 
     void PlayAudio() {
-        Debug.Log("Playing Audio");
         var audio = this.GetComponent<AudioSource>();
         Debug.Log(audio);
         if (audio != null) {
