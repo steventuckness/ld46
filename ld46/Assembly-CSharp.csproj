@@ -63,8 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Behaviors\BuzzKills.cs" />
     <Compile Include="Assets\Behaviors\HypeSlider.cs" />
     <Compile Include="Assets\Behaviors\MenuActions.cs" />
+    <Compile Include="Assets\Behaviors\Metrics.cs" />
+    <Compile Include="Assets\Behaviors\Music.cs" />
+    <Compile Include="Assets\Behaviors\PauseManager.cs" />
     <Compile Include="Assets\Behaviors\SpawnsDancersWithHype.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Kris - normal/Projects/Unity/ld46/ld46/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
