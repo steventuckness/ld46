@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 52f59a26aa35ac647a22199563b21b8b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7956844889357216456
+    second: dancing-man-icon-pictogram-vector-600w-276015413_0
+  - first:
+      213: 7482990469034225505
+    second: dancing-man-icon-pictogram-vector-600w-276015413_1
+  - first:
+      213: -8306784643782573709
+    second: dancing-man-icon-pictogram-vector-600w-276015413_2
+  - first:
+      213: -6713581016062629368
+    second: dancing-man-icon-pictogram-vector-600w-276015413_3
+  - first:
+      213: -8804406348462727722
+    second: dancing-man-icon-pictogram-vector-600w-276015413_4
+  - first:
+      213: 7830202945026663285
+    second: dancing-man-icon-pictogram-vector-600w-276015413_5
+  - first:
+      213: -4829259159982506083
+    second: dancing-man-icon-pictogram-vector-600w-276015413_0
+  - first:
+      213: -2990737752282595854
+    second: dancing-man-icon-pictogram-vector-600w-276015413_1
+  - first:
+      213: 287210120596340048
+    second: dancing-man-icon-pictogram-vector-600w-276015413_2
+  - first:
+      213: 6024647067692598777
+    second: dancing-man-icon-pictogram-vector-600w-276015413_3
+  - first:
+      213: 7829667737815925237
+    second: dancing-man-icon-pictogram-vector-600w-276015413_4
+  - first:
+      213: -8817367912039056101
+    second: dancing-man-icon-pictogram-vector-600w-276015413_5
+  - first:
+      213: -4658744253660274689
+    second: dancing-man-icon-pictogram-vector-600w-276015413_6
+  - first:
+      213: -8977974927437748324
+    second: dancing-man-icon-pictogram-vector-600w-276015413_7
+  - first:
+      213: 5363384975157954316
+    second: dancing-man-icon-pictogram-vector-600w-276015413_8
+  - first:
+      213: 8937938078651756642
+    second: dancing-man-icon-pictogram-vector-600w-276015413_9
+  - first:
+      213: -78598023463530684
+    second: dancing-man-icon-pictogram-vector-600w-276015413_10
+  - first:
+      213: 9053647630289590861
+    second: dancing-man-icon-pictogram-vector-600w-276015413_11
+  - first:
+      213: 1537859813123945680
+    second: dancing-man-icon-pictogram-vector-600w-276015413_12
+  - first:
+      213: 1530670873958432341
+    second: dancing-man-icon-pictogram-vector-600w-276015413_13
+  - first:
+      213: -8286585044155418167
+    second: dancing-man-icon-pictogram-vector-600w-276015413_14
+  - first:
+      213: -3369705653748584101
+    second: dancing-man-icon-pictogram-vector-600w-276015413_15
+  - first:
+      213: -7235959242607499348
+    second: dancing-man-icon-pictogram-vector-600w-276015413_16
+  - first:
+      213: 570113747476074323
+    second: dancing-man-icon-pictogram-vector-600w-276015413_17
+  - first:
+      213: -5897740760623319731
+    second: dancing-man-icon-pictogram-vector-600w-276015413_18
+  - first:
+      213: -1249043989220361372
+    second: dancing-man-icon-pictogram-vector-600w-276015413_19
+  - first:
+      213: -5408140474279690190
+    second: dancing-man-icon-pictogram-vector-600w-276015413_20
+  - first:
+      213: -4991769719247400956
+    second: dancing-man-icon-pictogram-vector-600w-276015413_21
+  - first:
+      213: -7219001835958821233
+    second: dancing-man-icon-pictogram-vector-600w-276015413_22
+  - first:
+      213: 4405077300079487244
+    second: dancing-man-icon-pictogram-vector-600w-276015413_23
+  - first:
+      213: -1682043206371067720
+    second: dancing-man-icon-pictogram-vector-600w-276015413_24
+  - first:
+      213: -4515099145710181643
+    second: dancing-man-icon-pictogram-vector-600w-276015413_25
+  - first:
+      213: 8416397765884765739
+    second: dancing-man-icon-pictogram-vector-600w-276015413_26
+  - first:
+      213: 2529518980862964214
+    second: dancing-man-icon-pictogram-vector-600w-276015413_27
+  - first:
+      213: 5500022111510246142
+    second: dancing-man-icon-pictogram-vector-600w-276015413_28
+  - first:
+      213: -5445953692632474452
+    second: dancing-man-icon-pictogram-vector-600w-276015413_29
+  - first:
+      213: -3226500149577878897
+    second: dancing-man-icon-pictogram-vector-600w-276015413_30
+  - first:
+      213: -7218933255321932974
+    second: dancing-man-icon-pictogram-vector-600w-276015413_31
+  - first:
+      213: -2453043800147606922
+    second: dancing-man-icon-pictogram-vector-600w-276015413_32
+  - first:
+      213: 6751904893154385977
+    second: dancing-man-icon-pictogram-vector-600w-276015413_33
+  - first:
+      213: -7967707526473371345
+    second: dancing-man-icon-pictogram-vector-600w-276015413_34
+  - first:
+      213: -5982273047354849173
+    second: dancing-man-icon-pictogram-vector-600w-276015413_35
+  - first:
+      213: 7415811128298546137
+    second: dancing-man-icon-pictogram-vector-600w-276015413_36
+  - first:
+      213: -5370779523056751013
+    second: dancing-man-icon-pictogram-vector-600w-276015413_37
+  - first:
+      213: 5903222449605055970
+    second: dancing-man-icon-pictogram-vector-600w-276015413_38
+  - first:
+      213: 3682612091368395101
+    second: dancing-man-icon-pictogram-vector-600w-276015413_39
+  - first:
+      213: 745730702586659883
+    second: dancing-man-icon-pictogram-vector-600w-276015413_40
+  - first:
+      213: -6150727041106284075
+    second: dancing-man-icon-pictogram-vector-600w-276015413_41
+  - first:
+      213: -4637521424200081754
+    second: dancing-man-icon-pictogram-vector-600w-276015413_42
+  - first:
+      213: 6709997004391656866
+    second: dancing-man-icon-pictogram-vector-600w-276015413_43
+  - first:
+      213: 6641412741582212692
+    second: dancing-man-icon-pictogram-vector-600w-276015413_44
+  - first:
+      213: -5832392528186369935
+    second: dancing-man-icon-pictogram-vector-600w-276015413_45
+  - first:
+      213: 6642133589362665139
+    second: dancing-man-icon-pictogram-vector-600w-276015413_46
+  - first:
+      213: 2030824085703812327
+    second: dancing-man-icon-pictogram-vector-600w-276015413_47
+  - first:
+      213: -1220437650281892
+    second: dancing-man-icon-pictogram-vector-600w-276015413_48
+  - first:
+      213: -1061582994733264520
+    second: dancing-man-icon-pictogram-vector-600w-276015413_49
+  - first:
+      213: -4923842957816147365
+    second: dancing-man-icon-pictogram-vector-600w-276015413_50
+  - first:
+      213: 2345612978534530095
+    second: dancing-man-icon-pictogram-vector-600w-276015413_51
+  - first:
+      213: -4439505864098920216
+    second: dancing-man-icon-pictogram-vector-600w-276015413_52
+  - first:
+      213: -6513516574924262333
+    second: dancing-man-icon-pictogram-vector-600w-276015413_53
+  - first:
+      213: 88433246007677631
+    second: dancing-man-icon-pictogram-vector-600w-276015413_54
+  - first:
+      213: -929122936114878580
+    second: dancing-man-icon-pictogram-vector-600w-276015413_55
+  - first:
+      213: 3051059098360581157
+    second: dancing-man-icon-pictogram-vector-600w-276015413_56
+  - first:
+      213: -22643261391929863
+    second: dancing-man-icon-pictogram-vector-600w-276015413_57
+  - first:
+      213: 7603540188631115195
+    second: dancing-man-icon-pictogram-vector-600w-276015413_58
+  - first:
+      213: 766830868282245575
+    second: dancing-man-icon-pictogram-vector-600w-276015413_59
+  - first:
+      213: -2976775371960247291
+    second: dancing-man-icon-pictogram-vector-600w-276015413_60
+  - first:
+      213: -8789413535386000947
+    second: dancing-man-icon-pictogram-vector-600w-276015413_61
+  - first:
+      213: 8931642677155041943
+    second: dancing-man-icon-pictogram-vector-600w-276015413_62
+  - first:
+      213: 7427644536371797596
+    second: dancing-man-icon-pictogram-vector-600w-276015413_63
+  - first:
+      213: 1106663695940149598
+    second: dancing-man-icon-pictogram-vector-600w-276015413_64
+  - first:
+      213: 2972044222491022565
+    second: dancing-man-icon-pictogram-vector-600w-276015413_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dancing-man-icon-pictogram-vector-600w-276015413_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 200
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ff0f861660bfcb0800000000000000
+      internalID: -4829259159982506083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dancing-man-icon-pictogram-vector-600w-276015413_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 310
+        width: 200
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd78d22cd3ce76d0800000000000000
+      internalID: -2990737752282595854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dancing-man-icon-pictogram-vector-600w-276015413_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 310
+        width: 200
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dba0e35106cf300800000000000000
+      internalID: 287210120596340048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dancing-man-icon-pictogram-vector-600w-276015413_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f58aee8698db9350800000000000000
+      internalID: 6024647067692598777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dancing-man-icon-pictogram-vector-600w-276015413_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 200
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1caddf25198ac60800000000000000
+      internalID: 7829667737815925237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dancing-man-icon-pictogram-vector-600w-276015413_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dfbf4b99a62a580800000000000000
+      internalID: -8817367912039056101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
