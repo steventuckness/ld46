@@ -5,6 +5,12 @@ using UnityEngine;
 public class SoundSystem : MonoBehaviour
 {
     // Start is called before the first frame update
+
+
+    public enum Tracks {
+        AUDIO1, AUDIO2, BOOM
+    }
+
     void Start()
     {
         

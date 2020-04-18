@@ -10,8 +10,8 @@ public class HypeButton : MonoBehaviour
     public float hypeFactor;
     public int cost;
     public string trackName;
-    public AudioSource playAudio; 
     public float duration;
+    public SoundSystem.Tracks tracks;
 
     public GameObject metrics;
     public GameObject soundSystem;
@@ -58,18 +58,27 @@ public class HypeButton : MonoBehaviour
             var s = soundSystem.GetComponent<SoundSystem>();
             s.UnmuteTrack(trackName);
         }
-        if (playAudio != null) {
-            Debug.Log("Playing Audio Clip");
-            playAudio.Play();
+        PlayAudio();
+    }
+
+    void PlayAudio() {
+        var audio = this.GetComponent<AudioSource>();
+        if (audio != null) {
+            audio.Play();
         }
+    }
+
+    void StopAudio() {
+        var audio = this.GetComponent<AudioSource>();
+        if (audio != null) {
+            audio.Stop();
+        }
+
     }
 
     void DeactivateHype() {
         isActive = false;
         runtime = 0;
-        if (playAudio != null) {
-            playAudio.Stop();
-        }
         if (trackName != "" && soundSystem != null) {
             var s = soundSystem.GetComponent<SoundSystem>();
             s.MuteTrack(trackName);
