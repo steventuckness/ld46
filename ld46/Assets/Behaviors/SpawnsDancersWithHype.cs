@@ -11,19 +11,22 @@ public class SpawnsDancersWithHype : MonoBehaviour
   public int maxDancers = 10;
   public int hypePerDancer = 10;
   public GameObject dancerSpawnArea;
+  public GameObject metricsObject;
 
-  bool flipXAxis = false;
+  bool shouldFlip = false;
   List<GameObject> instances = new List<GameObject>();
   System.Random random = new System.Random();
-
+  Metrics metrics;
+  
   void Start()
   {
+    metrics = metricsObject.GetComponent<Metrics>();
   }
 
   // Update is called once per frame
   void Update()
   {
-    int requiredDancers = Math.Min(maxDancers, hype / hypePerDancer);
+    int requiredDancers = Math.Min(maxDancers, (int) metrics.hype / hypePerDancer);
 
     DestroyExcessDancers(requiredDancers);
     SpawnRequiredDancers(requiredDancers);
@@ -41,17 +44,21 @@ public class SpawnsDancersWithHype : MonoBehaviour
     {
       var newDancer = Instantiate(dancerPrefab);
       newDancer.transform.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 1);
-
-      if (flipXAxis) {
-        var scale = newDancer.transform.localScale;
-        scale.Scale(new Vector3(-1, 1, 1));
-        newDancer.transform.localScale = scale;
-      }
-      flipXAxis = !flipXAxis;
+      FlipXAxis(newDancer);
+      shouldFlip = !shouldFlip;
       instances.Add(newDancer);
     }
   }
 
+  private void FlipXAxis(GameObject newDancer)
+  {
+    if (shouldFlip)
+    {
+      var scale = newDancer.transform.localScale;
+      scale.Scale(new Vector3(-1, 1, 1));
+      newDancer.transform.localScale = scale;
+    }
+  }
 
   void DestroyExcessDancers(int requiredDancers)
   {

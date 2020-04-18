@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Metrics : MonoBehaviour
 {
@@ -11,12 +12,12 @@ public class Metrics : MonoBehaviour
     public float hypeDecrementStartDelay = 0;
     public float hypeDecrementTimeInterval = 1f;
 
-    /** 
+    /**
      * Start is called before the first frame update
-     * 
+     *
      * Sets up a call to {IncrementMoney} method once after {moneyIncrementStartDelay} seconds,
      * and then every {moneyIncremenetTimeInterval} second(s).
-     * 
+     *
      * Sets up a call to {DecrementHype} method once after {hypeDecrementStartDelay} seconds,
      * and then every {hypeDecrementTimeInterval} second(s);
      */
@@ -46,5 +47,8 @@ public class Metrics : MonoBehaviour
     {
         hype -= (hype == 0) ? 0 : hypeDecrementFactor;
         Debug.Log("Hype value: " + hype);
+        if(hype == 0 ) {
+            SceneManager.LoadScene("Scenes/end-game");
+        }
     }
 }
