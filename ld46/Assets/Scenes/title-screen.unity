@@ -420,7 +420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.400055, y: -317}
+  m_AnchoredPosition: {x: 21.400055, y: -89}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715647029
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 734069892}
   - component: {fileID: 734069891}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Game Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,11 +543,11 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.82, z: 1}
   m_Children: []
   m_Father: {fileID: 854720100}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 605}
+  m_AnchoredPosition: {x: -2, y: 514}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734069891
@@ -581,9 +581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Staying Alive
-
-    AKA DJ Simulator'
+  m_Text: <Clever DJ Name>
 --- !u!222 &734069892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -720,8 +718,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1005832213}
   - {fileID: 734069890}
+  - {fileID: 1005832213}
   - {fileID: 1981220924}
   - {fileID: 715647027}
   m_Father: {fileID: 0}
@@ -764,11 +762,11 @@ RectTransform:
   m_Children:
   - {fileID: 1536741971}
   m_Father: {fileID: 854720100}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.4, y: -53}
+  m_AnchoredPosition: {x: 21.4, y: 179}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005832214
@@ -822,7 +820,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: title-screen
+          m_StringArgument: Scenes/MainScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1005832215
@@ -938,7 +936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418987194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 383.1, y: 241.34, z: 15}
+  m_LocalPosition: {x: 715, y: 315, z: -376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1034,7 +1032,7 @@ GameObject:
   - component: {fileID: 1981220926}
   - component: {fileID: 1981220925}
   m_Layer: 5
-  m_Name: Button
+  m_Name: HighSoreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1057,7 +1055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.400055, y: -179}
+  m_AnchoredPosition: {x: 21.400055, y: 52}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981220925
