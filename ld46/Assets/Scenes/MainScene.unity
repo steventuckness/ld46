@@ -287,12 +287,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebea98622eb22da4c882376253cb6e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buzzKillFreeDuration: 1
-  buzzKillRangeMax: 18000
+  buzzKillFreeDurationInSeconds: 1
+  buzzKillRangeMax: 20000
+  buzzKillMessageLifeInSeconds: 2
+  messageLetterAddDelayInSeconds: 0.2
+  metrics: {fileID: 160390024}
   buzzKillNotificationSystemText: {fileID: 773906282}
   buzzKills:
-  - message
-  - cost
+  - BUZZKILL!
+  - SUPER BUZZKILL!
+  - SUPER ULTRA BUZZKILL!
 --- !u!4 &214842265
 Transform:
   m_ObjectHideFlags: 0
@@ -776,8 +780,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: -100}
-  m_SizeDelta: {x: 337.4098, y: 19.135803}
+  m_AnchoredPosition: {x: 381, y: -85}
+  m_SizeDelta: {x: 191.78778, y: 16.688904}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773906284
 MonoBehaviour:
@@ -804,7 +808,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 2
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
