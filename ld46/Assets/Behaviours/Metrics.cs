@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Metrics : MonoBehaviour
 {
-    public int money;
-    public int hype;
+    public float money;
+    public float hype;
 
     // Start is called before the first frame update
     void Start()

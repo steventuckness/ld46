@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HyperButton : MonoBehaviour
+public class HypeButton : MonoBehaviour
 {
-    public float fatigueIncreasePerActivation;
+    public float fatigueIncrease;
     public float currentFatigue;
     public float fatigueDecreaseSpeed;
-    public int hypeFactor;
+    public float hypeFactor;
     public int cost;
     public string trackName;
 
@@ -27,11 +27,11 @@ public class HyperButton : MonoBehaviour
 
     void ActivateHype()
     {
-        if (m.money - cost <= 0) { return; }
         var m = metrics.GetComponent<Metrics>(); 
+        if (m.money - cost <= 0) { return; }
         m.money -= cost; 
         m.hype += hypeFactor - currentFatigue;
-        currentFatigue += fatigueIncreasePerActivation;
+        currentFatigue += fatigueIncrease;
         if (trackName != "") {
             var s = soundSystem.GetComponent<Sound>();
             s.UnmuteTrack(trackName);
