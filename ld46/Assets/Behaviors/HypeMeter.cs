@@ -55,7 +55,7 @@ public class HypeMeter : MonoBehaviour
             index = 10;
         }
 
-        Object[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(spriteFilepath);
+        Object[] sprites = UnityEditor.AssetDatabase.LoadAllAssetRepresentationsAtPath(spriteFilepath);
         Sprite newSprite = sprites[index] as Sprite;
         this.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
