@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sound : MonoBehaviour
+public class SoundSystem : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,5 +18,9 @@ public class Sound : MonoBehaviour
 
     public void UnmuteTrack(string trackName) {
         Debug.Log("Unmuting track " + trackName);
+    }
+
+    public void MuteTrack(string trackName) {
+        Debug.Log("Muting track " + trackName);
     }
 }
