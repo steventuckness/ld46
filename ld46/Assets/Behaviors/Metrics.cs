@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Metrics : MonoBehaviour
 {
+
     public float money = 0;
     public float moneyIncrementStartDelay = 0;
     public float moneyIncrementTimeInterval = 1f;
@@ -11,6 +12,10 @@ public class Metrics : MonoBehaviour
     public float hypeDecrementFactor = 1;
     public float hypeDecrementStartDelay = 0;
     public float hypeDecrementTimeInterval = 1f;
+
+    public float hour = 0;
+    public float hourIncrementStartDelay = 0;
+    public float hourIncrementTimeInterval = 5f;
 
     /**
      * Start is called before the first frame update
@@ -30,6 +35,9 @@ public class Metrics : MonoBehaviour
 
         InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
         Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
+
+        InvokeRepeating("IncrementHour", hourIncrementStartDelay, hourIncrementTimeInterval);
+        Debug.Log("Calling IncrementHour every " + hourIncrementTimeInterval + " seconds");
     }
 
     // Update is called once per frame
@@ -50,5 +58,11 @@ public class Metrics : MonoBehaviour
         if(hype == 0 ) {
             SceneManager.LoadScene("Scenes/end-game");
         }
+    }
+
+    void IncrementHour()
+    {
+        hour += 1;
+        Debug.Log("Hour " + hour);
     }
 }
