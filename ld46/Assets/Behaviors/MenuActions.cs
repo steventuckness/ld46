@@ -14,7 +14,7 @@ public class MenuActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        
+
     }
 
     public void ExitGame() {
