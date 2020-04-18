@@ -47,9 +47,12 @@ public class HypeMeter : MonoBehaviour
     }
 
     void SetSpriteByIndex(int index) {
-        if(index < 0 || index > 10) {
+        if(index < 0 ) {
             Debug.Log("Invalid HypeMeter sprite request");
             index = 0; // return base sprite for now
+        }
+        if(index > 10) {
+            index = 10;
         }
 
         Object[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(spriteFilepath);
