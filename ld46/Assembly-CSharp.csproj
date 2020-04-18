@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Behaviors\BuzzKills.cs" />
+    <Compile Include="Assets\Behaviors\HypeButton.cs" />
     <Compile Include="Assets\Behaviors\HypeSlider.cs" />
     <Compile Include="Assets\Behaviors\MenuActions.cs" />
     <Compile Include="Assets\Behaviors\Metrics.cs" />
