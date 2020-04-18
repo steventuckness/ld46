@@ -23,14 +23,14 @@ public class Music : MonoBehaviour
         this.tracking.Add(Tracks.Bass, this.bass);
     }
 
-    void MuteTrack(Tracks track)
+    public void MuteTrack(Tracks track)
     {
         AudioSource source = this.tracking[track];
 
         source.mute = true;
     }
 
-    void UnmuteTrack(Tracks track)
+    public void UnmuteTrack(Tracks track)
     {
         AudioSource source = this.tracking[track];
 

@@ -9,12 +9,8 @@ public class HypeButton : MonoBehaviour
     public float fatigueCooldown;
     public float hypeFactor;
     public int cost;
-    public string trackName;
     public float duration;
-    public SoundSystem.Tracks tracks;
-
-    public GameObject metrics;
-    public GameObject soundSystem;
+    public Music.Tracks track;
 
     private float runtime;
     private bool isActive;
@@ -23,10 +19,6 @@ public class HypeButton : MonoBehaviour
     {
         isActive = false;
         runtime = 0;
-        if (metrics == null) {
-            Debug.LogError("HypeButton has no associated metrics object");
-        }
-
     }
 
     void Update()
@@ -37,7 +29,7 @@ public class HypeButton : MonoBehaviour
         if (isActive) {
             runtime += Time.deltaTime;
         }
-        if (runtime >= duration) {
+        if (runtime != 0 && runtime >= duration) {
             DeactivateHype();
         }
     }
@@ -48,21 +40,22 @@ public class HypeButton : MonoBehaviour
 
     void ActivateHype()
     {
-        Debug.Log("Hyped!");
-        var m = metrics.GetComponent<Metrics>(); 
-        if (m.money - cost <= 0) { return; }
+        var m = GameObject.Find("Metrics").GetComponent<Metrics>(); 
+        if (m.money - cost <= 0) { 
+            Debug.Log("Not enough money!");
+            return; 
+        }
         m.money -= cost; 
         m.hype += hypeFactor - currentFatigue;
         currentFatigue += fatigueIncrease;
-        if (trackName != "" && soundSystem != null) {
-            var s = soundSystem.GetComponent<SoundSystem>();
-            s.UnmuteTrack(trackName);
-        }
+        UnmuteTrack(track);
         PlayAudio();
     }
 
     void PlayAudio() {
+        Debug.Log("Playing Audio");
         var audio = this.GetComponent<AudioSource>();
+        Debug.Log(audio);
         if (audio != null) {
             audio.Play();
         }
@@ -73,15 +66,21 @@ public class HypeButton : MonoBehaviour
         if (audio != null) {
             audio.Stop();
         }
-
     }
 
     void DeactivateHype() {
         isActive = false;
         runtime = 0;
-        if (trackName != "" && soundSystem != null) {
-            var s = soundSystem.GetComponent<SoundSystem>();
-            s.MuteTrack(trackName);
-        }
+        MuteTrack(track);
+    }
+
+    void MuteTrack(Music.Tracks track) {
+        Music music = GameObject.Find("Music").GetComponent<Music>();
+        music.MuteTrack(track);
+    }
+
+    void UnmuteTrack(Music.Tracks track) {
+        Music music = GameObject.Find("Music").GetComponent<Music>();
+        music.UnmuteTrack(track);
     }
 }
