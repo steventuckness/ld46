@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BuzzKill : MonoBehaviour
+public class BuzzKills : MonoBehaviour
 {
     public float buzzKillFreeDuration = 60.0f;
     public int buzzKillRangeMax = 20000;
-    public GameObject metrics;
+    // public GameObject metrics;
+
+    public GameObject buzzKillNotificationSystemText;
     public string[] buzzKills = { "message", "cost" };
 
     private float timer = 0.0f;
@@ -28,9 +31,13 @@ public class BuzzKill : MonoBehaviour
             if (buzzKill <= timer) 
             {
                 var buzzKillIndex = Random.Range(0, buzzKills.Length);
-                Debug.Log("buzzkill:" + buzzKills[buzzKillIndex]);
+                Debug.Log("buzzkill: " + buzzKills[buzzKillIndex]);
+
+                if (buzzKills[buzzKillIndex] == "message")
+                {
+                    buzzKillNotificationSystemText.GetComponent<Text>().text = "super buzz kill";
+                }
             }
-            
         }     
     }
 }
