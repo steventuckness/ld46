@@ -5,20 +5,30 @@ using UnityEngine;
 public class HypeButton : MonoBehaviour
 {
     public float fatigueIncrease;
-    public float currentFatigue;
     public float fatigueCooldown;
     public float hypeFactor;
     public int cost;
     public float duration;
+
+    public bool playTrack;
+
+    public bool isToggler;
+
+    public Transform instantiate;
+
     public Music.Tracks track;
 
-    private float runtime;
+     float runtime;
     private bool isActive;
+
+    private Transform instance;
+    private float currentFatigue;
 
     void Start()
     {
         isActive = false;
         runtime = 0;
+        currentFatigue = 0;
     }
 
     void Update()
@@ -48,8 +58,17 @@ public class HypeButton : MonoBehaviour
         m.money -= cost; 
         m.hype += hypeFactor - currentFatigue;
         currentFatigue += fatigueIncrease;
+        if (isToggler && isActive) {
+            DeactivateHype();
+            return;
+        }
         UnmuteTrack(track);
         PlayAudio();
+        if (instantiate != null) {
+            Debug.Log("Instantiating");
+            instance = Instantiate(instantiate);            
+        }
+        isActive = true;
     }
 
     void PlayAudio() {
@@ -68,18 +87,25 @@ public class HypeButton : MonoBehaviour
         }
     }
 
+
     void DeactivateHype() {
+        Debug.Log("Deactivating");
         isActive = false;
         runtime = 0;
         MuteTrack(track);
+        if (instance != null) {
+            Destroy(instance.gameObject);
+        }
     }
 
     void MuteTrack(Music.Tracks track) {
+        if (!playTrack) { return; }
         Music music = GameObject.Find("Music").GetComponent<Music>();
         music.MuteTrack(track);
     }
 
     void UnmuteTrack(Music.Tracks track) {
+        if (!playTrack) { return; }
         Music music = GameObject.Find("Music").GetComponent<Music>();
         music.UnmuteTrack(track);
     }
