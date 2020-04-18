@@ -26,6 +26,7 @@ public class HypeButton : MonoBehaviour
         if (metrics == null) {
             Debug.LogError("HypeButton has no associated metrics object");
         }
+
     }
 
     void Update()
@@ -41,8 +42,13 @@ public class HypeButton : MonoBehaviour
         }
     }
 
+    void OnMouseDown() {
+        ActivateHype();
+    }
+
     void ActivateHype()
     {
+        Debug.Log("Hyped!");
         var m = metrics.GetComponent<Metrics>(); 
         if (m.money - cost <= 0) { return; }
         m.money -= cost; 
@@ -53,6 +59,7 @@ public class HypeButton : MonoBehaviour
             s.UnmuteTrack(trackName);
         }
         if (playAudio != null) {
+            Debug.Log("Playing Audio Clip");
             playAudio.Play();
         }
     }

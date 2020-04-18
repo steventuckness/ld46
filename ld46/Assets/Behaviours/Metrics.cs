@@ -21,8 +21,8 @@ public class Metrics : MonoBehaviour
         // Prints out money and hype every second
         counter += Time.deltaTime;
         if (counter > 1) {
-            Debug.Log("Money: " + money);        
-            Debug.Log("Hype: " + hype);
+            //Debug.Log("Money: " + money);        
+            //Debug.Log("Hype: " + hype);
             counter = 0;
         }
     }
