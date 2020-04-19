@@ -61,7 +61,7 @@ public class BuzzKills : MonoBehaviour
     
                     if (currentBuzzKillMessageIterator == currentBuzzKillMessage.Length)
                     {
-                        metrics.GetComponent<Metrics>().SubtractHype(this.buzzKillHypeValues[buzzKillIndex]);
+                        metrics.GetComponent<Metrics>().Hype -= this.buzzKillHypeValues[buzzKillIndex];
                         StartCoroutine(continueShowingBuzzKillMessageForSeconds(buzzKillMessageLifeInSeconds));
                     }
                 }

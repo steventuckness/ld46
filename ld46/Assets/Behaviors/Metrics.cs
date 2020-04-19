@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Metrics : MonoBehaviour
 {
-    const float HYPE_CAP = 100f;
+    const float HYPE_CAP = 100;
 
     private GameObject hourTextObject;
     private GameObject moneyTextObject;
@@ -29,6 +28,8 @@ public class Metrics : MonoBehaviour
     private float hypeDecrementStartDelay = 5f;
     private float hypeDecrementTimeInterval = 2.5f;
 
+    public event Action<float> HypeUpdated = delegate { };
+
     /**
      * Start is called before the first frame update
      *
@@ -47,7 +48,7 @@ public class Metrics : MonoBehaviour
 
         // Only start everything up if we're in the main scene
         if ( SceneManager.GetActiveScene().name == "MainScene") {
-            hype = startingHype;
+            Hype = startingHype;
 
             currentMoney = startingMoney;
             UpdateMoneyText();
@@ -61,9 +62,17 @@ public class Metrics : MonoBehaviour
             InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
             Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
         }
+
+        HypeUpdated += value => {
+            if (hype <= 0)
+            {
+                CancelInvoke();
+                SceneManager.LoadScene("Scenes/end-game");
+            }
+        };
     }
 
-    // Update is called once per frame
+  // Update is called once per frame
     void Update()
     {
         hourIncrementTimer += Time.deltaTime;
@@ -126,32 +135,17 @@ public class Metrics : MonoBehaviour
     // Called periodically
     void DecrementHype()
     {
-        hype -= (hype == 0) ? 0 : hypeDecrementFactor;
-        // Debug.Log("Hype value: " + hype);
-        if(hype <= 0 ) {
-            CancelInvoke();
-            SceneManager.LoadScene("Scenes/end-game");
-        }
+        Hype -= hypeDecrementFactor;
     }
 
-    public void AddHype(float delta) {
-        if(hype + delta > HYPE_CAP) {
-            hype = HYPE_CAP;
-        } else {
-            hype += delta;
+    public float Hype 
+    {
+        get { return hype;  }
+        set {
+            if (hype == value) return;
+            hype = Math.Min(value, HYPE_CAP);
+            hype = Math.Max(hype, 0);
+            HypeUpdated.Invoke(hype);
         }
-    }
-
-    public void SubtractHype(float delta) {
-        if(hype - delta <= 0) {
-            CancelInvoke();
-            SceneManager.LoadScene("Scenes/end-game");
-        } else {
-            hype -= delta;
-        }
-    }
-
-    public float GetHype() {
-        return hype;
     }
 }

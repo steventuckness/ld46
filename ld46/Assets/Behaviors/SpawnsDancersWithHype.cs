@@ -7,7 +7,6 @@ public class SpawnsDancersWithHype : MonoBehaviour
 {
   // Start is called before the first frame update
   public GameObject dancerPrefab;
-  public int hype;
   public int maxDancers = 10;
   public int hypePerDancer = 10;
   public GameObject dancerSpawnArea;
@@ -21,12 +20,13 @@ public class SpawnsDancersWithHype : MonoBehaviour
   void Start()
   {
     metrics = metricsObject.GetComponent<Metrics>();
+    metrics.HypeUpdated += OnHypeUpdated;
+    OnHypeUpdated(metrics.Hype);
   }
 
-  // Update is called once per frame
-  void Update()
+  private void OnHypeUpdated(float obj)
   {
-    int requiredDancers = Math.Min(maxDancers, (int) metrics.GetHype() / hypePerDancer);
+    int requiredDancers = Math.Min(maxDancers, (int)metrics.Hype / hypePerDancer);
 
     DestroyExcessDancers(requiredDancers);
     SpawnRequiredDancers(requiredDancers);

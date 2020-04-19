@@ -60,7 +60,7 @@ public class HypeButton : MonoBehaviour
             return;
         }
         MetricsObject.DecreaseMoney(cost);
-        MetricsObject.AddHype(hypeAddedOnUse - currentFatigue);
+        MetricsObject.Hype += hypeAddedOnUse - currentFatigue;
         currentFatigue += fatigueIncreaseOnUse;
         if (isToggler && isActive) {
             DeactivateHype();

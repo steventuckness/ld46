@@ -24,7 +24,7 @@ public class HypeMeter : MonoBehaviour
     void Update()
     {
         int hypeSpriteNumber = GetSpriteIndex();
-        int hype = (int)(metrics.GetComponent<Metrics>().GetHype());
+        int hype = (int) metrics.GetComponent<Metrics>().Hype;
 
         if( hype < 5 ) {
             // Under 5 hype, blink last bar, alternating between sprite 0 and 1
@@ -60,7 +60,7 @@ public class HypeMeter : MonoBehaviour
     }
 
     int GetSpriteIndex() {
-        int hype = (int)(metrics.GetComponent<Metrics>().GetHype());
+        int hype = (int) metrics.GetComponent<Metrics>().Hype;
         return (hype / 10) + 1; // always have at least 1 bar
     }
 }
