@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &153969658652070200
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19120662
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7604665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.56334877
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.26032478
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -73.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -218.157
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837498, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 360.489
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313674324534837501, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_Name
+      value: SparksEffectLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.492
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.18227671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76265615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5602576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.26691237
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -72.152
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -221.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822632, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 363.938
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245230913194822639, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
+        type: 3}
+      propertyPath: m_Name
+      value: SparksEffectLeft
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
