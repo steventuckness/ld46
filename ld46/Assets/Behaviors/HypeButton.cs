@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HypeButton : MonoBehaviour
 {
@@ -57,6 +58,9 @@ public class HypeButton : MonoBehaviour
         var MetricsObject = GameObject.Find("Metrics").GetComponent<Metrics>();
         if (MetricsObject.currentMoney - cost <= 0) {
             Debug.Log("Not enough money!");
+            GameObject.Find("Hype Buttons").GetComponent<AudioSource>().Play();
+            GameObject.Find("NotEnoughMoneyText").GetComponent<Text>().enabled = true;
+            StartCoroutine(this.continueShowingNotEnoughMoneyMessageForSeconds(.5f));
             return;
         }
         MetricsObject.DecreaseMoney(cost);
@@ -72,6 +76,12 @@ public class HypeButton : MonoBehaviour
             instance = Instantiate(instantiate);
         }
         isActive = true;
+    }
+
+    private IEnumerator continueShowingNotEnoughMoneyMessageForSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        GameObject.Find("NotEnoughMoneyText").GetComponent<Text>().enabled = false;
     }
 
     void PlayAudio() {
