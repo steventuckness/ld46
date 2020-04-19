@@ -12,8 +12,17 @@ public class BuzzKills : MonoBehaviour
     public GameObject metrics;
     public GameObject buzzKillNotificationSystemText;
     public int buzzKillIndex = -1;
-    public string[] buzzKills = { "buzz kill!", "super buzz kill!", "super ultra buzz kill!" };
-    public int[] buzzKillHypeValues = { 10, 15, 25 };
+    public string[] buzzKills = {
+        "New club accross the street just opened!",
+        "Someone fainted while dancing!",
+        "A polar bear fight broke out!",
+        "Your turntable is overheating!",
+        "Speaker malfunction!",
+        "The cops have been called!",
+        "Global Warming!",
+        "Mama bear showed up!"
+    };
+    public int buzzKillHypeSubtraction = 5;
 
     private float timer = 0.0f;
     private string currentBuzzKillMessage = string.Empty;
@@ -45,7 +54,7 @@ public class BuzzKills : MonoBehaviour
                     this.GetComponent<SpriteRenderer>().enabled = true;
                     this.GetComponent<Animator>().enabled = true;
                     this.buzzKillIndex = Random.Range(0, buzzKills.Length);
-                    this.currentBuzzKillMessage = buzzKills[buzzKillIndex] + " (-" + this.buzzKillHypeValues[buzzKillIndex] + " hype)";
+                    this.currentBuzzKillMessage = buzzKills[buzzKillIndex] + " (-" + buzzKillHypeSubtraction + " hype)";
                     this.isBuzzKillInProgress = true;
                 }
             }
@@ -61,7 +70,7 @@ public class BuzzKills : MonoBehaviour
     
                     if (currentBuzzKillMessageIterator == currentBuzzKillMessage.Length)
                     {
-                        metrics.GetComponent<Metrics>().Hype -= this.buzzKillHypeValues[buzzKillIndex];
+                        metrics.GetComponent<Metrics>().Hype -= buzzKillHypeSubtraction;
                         StartCoroutine(continueShowingBuzzKillMessageForSeconds(buzzKillMessageLifeInSeconds));
                     }
                 }
