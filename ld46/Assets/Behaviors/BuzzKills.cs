@@ -53,6 +53,7 @@ public class BuzzKills : MonoBehaviour
                 {
                     this.GetComponent<SpriteRenderer>().enabled = true;
                     this.GetComponent<Animator>().enabled = true;
+                    this.GetComponent<AudioSource>().Play();
                     this.buzzKillIndex = Random.Range(0, buzzKills.Length);
                     this.currentBuzzKillMessage = buzzKills[buzzKillIndex] + " (-" + buzzKillHypeSubtraction + " hype)";
                     this.isBuzzKillInProgress = true;
