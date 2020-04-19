@@ -202,7 +202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Couldn't quite keep it going until the sun came up
+  m_Text: I know birthday parties that lasted longer than that
 --- !u!222 &266702734
 CanvasRenderer:
   m_ObjectHideFlags: 0
