@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class HypeMeter : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class HypeMeter : MonoBehaviour
     int currentSpriteNumber;
     float blinkTimer = blinkTimeout;
 
-    const string spriteFilepath = "Assets/Sprites/hype-meter-spritesheet.png";
+    const string spriteFilepath = "hype-meter-spritesheet";
 
     // Start is called before the first frame update
     void Start()
@@ -54,8 +53,9 @@ public class HypeMeter : MonoBehaviour
             index = 10;
         }
 
-        Object[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(spriteFilepath);
-        Sprite newSprite = sprites[index] as Sprite;
+        Object[] sprites = Resources.LoadAll(spriteFilepath);
+        // The array returned by Resources.LoadAll has an empty first element, so add one here
+        Sprite newSprite = sprites[index+1] as Sprite;
         this.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 
