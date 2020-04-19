@@ -23,13 +23,15 @@ public class BuzzKills : MonoBehaviour
     void Start()
     {
         buzzKillNotificationSystemText.GetComponent<Text>().text = "";
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        this.GetComponent<Animator>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-
+            
         if (timer >= buzzKillFreeDurationInSeconds)
         {
             if (!this.isBuzzKillInProgress)
@@ -38,9 +40,8 @@ public class BuzzKills : MonoBehaviour
 
                 if (buzzKill <= timer)
                 {
-                    // TODO: replace with sprite...
-                    buzzKillNotificationSystemText.GetComponent<Text>().text = "BUZZKILL ABOUT TO HAPPEN!";
-
+                    this.GetComponent<SpriteRenderer>().enabled = true;
+                    this.GetComponent<Animator>().enabled = true;
                     Debug.Log("buzzkill incoming!: " + currentBuzzKillMessage);
                     var buzzKillIndex = Random.Range(0, buzzKills.Length);
                     this.currentBuzzKillMessage = buzzKills[buzzKillIndex];
@@ -59,6 +60,8 @@ public class BuzzKills : MonoBehaviour
 
                     if (currentBuzzKillMessageIterator == currentBuzzKillMessage.Length)
                     {
+                        // screw with hype
+                        // this.metrics.
                         StartCoroutine(continueShowingBuzzKillMessageForSeconds(buzzKillMessageLifeInSeconds));
                     }
                 }
@@ -74,6 +77,8 @@ public class BuzzKills : MonoBehaviour
         buzzKillNotificationSystemText.GetComponent<Text>().text = this.currentBuzzKillMessage;
         this.currentBuzzKillMessageIterator = 0;
         this.isBuzzKillInProgress = false;
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        this.GetComponent<Animator>().enabled = false;
         Debug.Log("hiding buzzkill message");
    }
 }
