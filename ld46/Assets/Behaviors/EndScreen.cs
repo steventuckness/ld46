@@ -8,7 +8,7 @@ public class EndScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int hours = (int)Metrics.hour;
+        int hours = (int)Metrics.currentHour;
         UnityEngine.UI.Text scoreText = this.GetComponent<UnityEngine.UI.Text>();
         scoreText.text = "You kept it going for " + hours + " hours.";
 

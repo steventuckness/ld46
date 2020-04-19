@@ -51,11 +51,11 @@ public class HypeButton : MonoBehaviour
     void ActivateHype()
     {
         var m = GameObject.Find("Metrics").GetComponent<Metrics>();
-        if (m.money - cost <= 0) {
+        if (m.currentMoney - cost <= 0) {
             Debug.Log("Not enough money!");
             return;
         }
-        m.money -= cost;
+        m.currentMoney -= cost;
         m.AddHype(hypeFactor - currentFatigue);
         currentFatigue += fatigueIncrease;
         if (isToggler && isActive) {

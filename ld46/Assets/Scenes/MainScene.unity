@@ -191,8 +191,18 @@ PrefabInstance:
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: hourIncrementTimeInterval
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: hourTextObject
+      value: 
+      objectReference: {fileID: 1032109341}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: moneyTextObject
+      value: 
+      objectReference: {fileID: 739290097}
     - target: {fileID: 2262480505305069315, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: m_Name
