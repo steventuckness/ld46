@@ -17,7 +17,7 @@ public class SpawnsDancersWithHype : MonoBehaviour
   List<GameObject> instances = new List<GameObject>();
   System.Random random = new System.Random();
   Metrics metrics;
-  
+
   void Start()
   {
     metrics = metricsObject.GetComponent<Metrics>();
@@ -26,7 +26,7 @@ public class SpawnsDancersWithHype : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    int requiredDancers = Math.Min(maxDancers, (int) metrics.hype / hypePerDancer);
+    int requiredDancers = Math.Min(maxDancers, (int) metrics.GetHype() / hypePerDancer);
 
     DestroyExcessDancers(requiredDancers);
     SpawnRequiredDancers(requiredDancers);

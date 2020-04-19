@@ -3,12 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class Metrics : MonoBehaviour
 {
+    const float HYPE_CAP = 100f;
 
     public float money = 0;
     public float moneyIncrementStartDelay = 0;
     public float moneyIncrementTimeInterval = 1f;
 
-    public float hype = 0;
+    public float startingHype = 0;
+    float hype = 0;
     public float hypeDecrementFactor = 1;
     public float hypeDecrementStartDelay = 0;
     public float hypeDecrementTimeInterval = 1f;
@@ -29,6 +31,8 @@ public class Metrics : MonoBehaviour
     void Start()
     {
         Debug.Log("Started Metrics");
+
+        hype = startingHype;
 
         InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
         Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
@@ -51,6 +55,7 @@ public class Metrics : MonoBehaviour
         Debug.Log("Money value: " + money);
     }
 
+    // Called periodically
     void DecrementHype()
     {
         hype -= (hype == 0) ? 0 : hypeDecrementFactor;
@@ -58,6 +63,26 @@ public class Metrics : MonoBehaviour
         if(hype == 0 ) {
             SceneManager.LoadScene("Scenes/end-game");
         }
+    }
+
+    public void AddHype(float delta) {
+        if(hype + delta > HYPE_CAP) {
+            hype = HYPE_CAP;
+        } else {
+            hype += delta;
+        }
+    }
+
+    public void SubtractHype(float delta) {
+        if(hype - delta <= 0) {
+            SceneManager.LoadScene("Scenes/end-game");
+        } else {
+            hype -= delta;
+        }
+    }
+
+    public float GetHype() {
+        return hype;
     }
 
     void IncrementHour()
