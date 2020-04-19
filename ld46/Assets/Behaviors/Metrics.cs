@@ -47,21 +47,19 @@ public class Metrics : MonoBehaviour
         moneyTextObject = GameObject.Find("MoneyText");
 
         // Only start everything up if we're in the main scene
-        if ( SceneManager.GetActiveScene().name == "MainScene") {
-            Hype = startingHype;
+        Hype = startingHype;
 
-            currentMoney = startingMoney;
-            UpdateMoneyText();
+        currentMoney = startingMoney;
+        UpdateMoneyText();
 
-            currentHour = 1;
-            UpdateHourText();
+        currentHour = 1;
+        UpdateHourText();
 
-            //InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
-            //Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
+        //InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
+        //Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
 
-            InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
-            Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
-        }
+        InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
+        Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
 
         HypeUpdated += value => {
             if (hype <= 0)
