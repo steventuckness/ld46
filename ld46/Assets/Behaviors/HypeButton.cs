@@ -50,13 +50,13 @@ public class HypeButton : MonoBehaviour
 
     void ActivateHype()
     {
-        var m = GameObject.Find("Metrics").GetComponent<Metrics>(); 
-        if (m.money - cost <= 0) { 
+        var m = GameObject.Find("Metrics").GetComponent<Metrics>();
+        if (m.money - cost <= 0) {
             Debug.Log("Not enough money!");
-            return; 
+            return;
         }
-        m.money -= cost; 
-        m.hype += hypeFactor - currentFatigue;
+        m.money -= cost;
+        m.AddHype(hypeFactor - currentFatigue);
         currentFatigue += fatigueIncrease;
         if (isToggler && isActive) {
             DeactivateHype();
@@ -65,7 +65,7 @@ public class HypeButton : MonoBehaviour
         UnmuteTrack(track);
         PlayAudio();
         if (instantiate != null) {
-            instance = Instantiate(instantiate);            
+            instance = Instantiate(instantiate);
         }
         isActive = true;
     }
