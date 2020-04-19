@@ -1853,9 +1853,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buzzKillFreeDurationInSeconds: 1
-  buzzKillRangeMax: 20000
+  buzzKillRangeMax: 50000
   buzzKillMessageLifeInSeconds: 2
-  messageLetterAddDelayInSeconds: 0.2
+  messageLetterAddDelayInSeconds: 0.05
   metrics: {fileID: 160390024}
   buzzKillNotificationSystemText: {fileID: 773906282}
   buzzKillIndex: -1
