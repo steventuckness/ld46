@@ -1,31 +1,55 @@
 fileFormatVersion: 2
-guid: ebeb554ee356c034099337684e24830e
+guid: 703088ec9ad6ef444bea66bfebeebb76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2061895788064797219
-    second: dancing bear 1_0
+      213: 5770269434803218777
+    second: Bear Dancing Sprite Sheet_0
   - first:
-      213: -6263139178837738158
-    second: dancing bear 1_1
+      213: 8982959426478501530
+    second: Bear Dancing Sprite Sheet_1
   - first:
-      213: -5656207772243246608
-    second: dancing bear 1_2
+      213: -449324750910223660
+    second: Bear Dancing Sprite Sheet_2
   - first:
-      213: 7496055476410772882
-    second: dancing bear 1_3
+      213: -8390195352060134279
+    second: Bear Dancing Sprite Sheet_3
   - first:
-      213: 6737299967610036250
-    second: dancing bear 1_4
+      213: -1094145874664255217
+    second: Bear Dancing Sprite Sheet_4
   - first:
-      213: 2712641131521950670
-    second: dancing bear 1_5
+      213: 9174515891500995456
+    second: Bear Dancing Sprite Sheet_5
   - first:
-      213: 3491176953594769197
-    second: dancing bear 1_6
+      213: 6011504070270192332
+    second: Bear Dancing Sprite Sheet_6
   - first:
-      213: 2608306932216718773
-    second: dancing bear 1_7
+      213: -766396073207242877
+    second: Bear Dancing Sprite Sheet_7
+  - first:
+      213: 4558657742599375278
+    second: Bear Dancing Sprite Sheet_0
+  - first:
+      213: 7466130229072232349
+    second: Bear Dancing Sprite Sheet_1
+  - first:
+      213: 8325829473574482522
+    second: Bear Dancing Sprite Sheet_2
+  - first:
+      213: 6589209489300017858
+    second: Bear Dancing Sprite Sheet_3
+  - first:
+      213: -6594566959526062307
+    second: Bear Dancing Sprite Sheet_4
+  - first:
+      213: -2570115819708235771
+    second: Bear Dancing Sprite Sheet_5
+  - first:
+      213: -5083871722150696171
+    second: Bear Dancing Sprite Sheet_6
+  - first:
+      213: 4592189621541131880
+    second: Bear Dancing Sprite Sheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,169 +135,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dancing bear 1_0
+      name: Bear Dancing Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
+        y: 2846
+        width: 1250
+        height: 1250
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddd068484bca263e0800000000000000
-      internalID: -2061895788064797219
+      spriteID: ea94838601b934f30800000000000000
+      internalID: 4558657742599375278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dancing bear 1_1
+      name: Bear Dancing Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
+        x: 1250
+        y: 2846
+        width: 1250
+        height: 1250
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25d7b82b91cd419a0800000000000000
-      internalID: -6263139178837738158
+      spriteID: d9ff7a6d2e50d9760800000000000000
+      internalID: 7466130229072232349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dancing bear 1_2
+      name: Bear Dancing Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
+        x: 2500
+        y: 2846
+        width: 1250
+        height: 1250
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f143afbffc1181b0800000000000000
-      internalID: -5656207772243246608
+      spriteID: a5272e84bc94b8370800000000000000
+      internalID: 8325829473574482522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dancing bear 1_3
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29de5107db6570860800000000000000
-      internalID: 7496055476410772882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dancing bear 1_4
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a10a5a2ff92bf7d50800000000000000
-      internalID: 6737299967610036250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dancing bear 1_5
+      name: Bear Dancing Sprite Sheet_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
+        y: 1596
+        width: 1250
+        height: 1250
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec3ca77acbc35a520800000000000000
-      internalID: 2712641131521950670
+      spriteID: 2c25c509e13917b50800000000000000
+      internalID: 6589209489300017858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dancing bear 1_6
+      name: Bear Dancing Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
+        x: 1250
+        y: 1596
+        width: 1250
+        height: 1250
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2feb0731f6237030800000000000000
-      internalID: 3491176953594769197
+      spriteID: d17dbe13a446b74a0800000000000000
+      internalID: -6594566959526062307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dancing bear 1_7
+      name: Bear Dancing Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
+        x: 2500
+        y: 1596
+        width: 1250
+        height: 1250
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b567ffd551923420800000000000000
-      internalID: 2608306932216718773
+      spriteID: 500cdae674d155cd0800000000000000
+      internalID: -2570115819708235771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear Dancing Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 346
+        width: 1250
+        height: 1250
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bed8daa957279b0800000000000000
+      internalID: -5083871722150696171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear Dancing Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 346
+        width: 1250
+        height: 1250
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866d13d512cbabf30800000000000000
+      internalID: 4592189621541131880
       vertices: []
       indices: 
       edges: []

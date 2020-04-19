@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class SpawnsDancersWithHype : MonoBehaviour
 {
   // Start is called before the first frame update
-  public GameObject dancerPrefab;
+  public GameObject[] dancerPrefabs;
   public int maxDancers = 10;
   public int hypePerDancer = 10;
   public GameObject dancerSpawnArea;
@@ -42,7 +42,8 @@ public class SpawnsDancersWithHype : MonoBehaviour
 
     while (requiredDancers > instances.Count)
     {
-      var newDancer = Instantiate(dancerPrefab);
+      int prefabIndex = random.Next(dancerPrefabs.Length);
+      var newDancer = Instantiate(dancerPrefabs[prefabIndex]);
       newDancer.transform.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 1);
       FlipXAxis(newDancer);
       shouldFlip = !shouldFlip;
