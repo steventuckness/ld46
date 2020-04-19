@@ -1853,15 +1853,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buzzKillFreeDurationInSeconds: 1
-  buzzKillRangeMax: 2000
+  buzzKillRangeMax: 20000
   buzzKillMessageLifeInSeconds: 2
-  messageLetterAddDelayInSeconds: 0.5
+  messageLetterAddDelayInSeconds: 0.2
   metrics: {fileID: 160390024}
   buzzKillNotificationSystemText: {fileID: 773906282}
+  buzzKillIndex: -1
   buzzKills:
   - buzz kill!
   - super buzz kill!
   - super ultra buzz kill!
+  buzzKillHypeValues: 04000000050000000a000000
 --- !u!1 &1448341625
 GameObject:
   m_ObjectHideFlags: 0

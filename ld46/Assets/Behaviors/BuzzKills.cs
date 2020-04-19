@@ -11,7 +11,9 @@ public class BuzzKills : MonoBehaviour
     public float messageLetterAddDelayInSeconds = .5f;
     public GameObject metrics;
     public GameObject buzzKillNotificationSystemText;
+    public int buzzKillIndex = -1;
     public string[] buzzKills = { "buzz kill!", "super buzz kill!", "super ultra buzz kill!" };
+    public int[] buzzKillHypeValues = { 4, 5, 10 };
 
     private float timer = 0.0f;
     private string currentBuzzKillMessage = string.Empty;
@@ -42,9 +44,8 @@ public class BuzzKills : MonoBehaviour
                 {
                     this.GetComponent<SpriteRenderer>().enabled = true;
                     this.GetComponent<Animator>().enabled = true;
-                    Debug.Log("buzzkill incoming!: " + currentBuzzKillMessage);
-                    var buzzKillIndex = Random.Range(0, buzzKills.Length);
-                    this.currentBuzzKillMessage = buzzKills[buzzKillIndex];
+                    this.buzzKillIndex = Random.Range(0, buzzKills.Length);
+                    this.currentBuzzKillMessage = buzzKills[buzzKillIndex] + " (-" + this.buzzKillHypeValues[buzzKillIndex] + " hype)";
                     this.isBuzzKillInProgress = true;
                 }
             }
@@ -57,11 +58,10 @@ public class BuzzKills : MonoBehaviour
                     buzzKillNotificationSystemText.GetComponent<Text>().text = this.currentBuzzKillMessage.Substring(0, this.currentBuzzKillMessageIterator);
                     currentBuzzKillMessageIterator++;
                     this.secondsSinceLastBuzzKillMessageLetterAdded = 0f;
-
+    
                     if (currentBuzzKillMessageIterator == currentBuzzKillMessage.Length)
                     {
-                        // screw with hype
-                        // this.metrics.
+                        metrics.GetComponent<Metrics>().SubtractHype(this.buzzKillHypeValues[buzzKillIndex]);
                         StartCoroutine(continueShowingBuzzKillMessageForSeconds(buzzKillMessageLifeInSeconds));
                     }
                 }
@@ -77,8 +77,8 @@ public class BuzzKills : MonoBehaviour
         buzzKillNotificationSystemText.GetComponent<Text>().text = this.currentBuzzKillMessage;
         this.currentBuzzKillMessageIterator = 0;
         this.isBuzzKillInProgress = false;
+        this.buzzKillIndex = -1;
         this.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<Animator>().enabled = false;
-        Debug.Log("hiding buzzkill message");
    }
 }
