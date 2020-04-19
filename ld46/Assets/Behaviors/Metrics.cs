@@ -116,7 +116,6 @@ public class Metrics : MonoBehaviour
     {
         currentMoney += Mathf.Ceil(hype / 4);
         UpdateMoneyText();
-        Debug.Log("Money value: " + currentMoney);
     }
 
     public void DecreaseMoney(int decreaseAmount)

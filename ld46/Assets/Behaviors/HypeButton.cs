@@ -49,11 +49,24 @@ public class HypeButton : MonoBehaviour
     }
 
     void OnMouseDown() {
+        ToggleHype();
+    }
+
+    void ToggleHype()
+    {
+        if (isToggler) {
+            if (isActive) {
+                DeactivateHype();
+                return;
+            } else {
+                ActivateHype();
+                return;
+            }
+        }
         ActivateHype();
     }
 
-    void ActivateHype()
-    {
+    void ActivateHype() {
         var MetricsObject = GameObject.Find("Metrics").GetComponent<Metrics>();
         if (MetricsObject.currentMoney - cost <= 0) {
             Debug.Log("Not enough money!");
@@ -62,21 +75,33 @@ public class HypeButton : MonoBehaviour
         MetricsObject.DecreaseMoney(cost);
         MetricsObject.Hype += hypeAddedOnUse - currentFatigue;
         currentFatigue += fatigueIncreaseOnUse;
-        if (isToggler && isActive) {
-            DeactivateHype();
-            return;
-        }
-        UnmuteTrack(track);
         PlayAudio();
         if (instantiate != null) {
             instance = Instantiate(instantiate);
         }
         isActive = true;
+        if (isToggler) {
+            ToggleTrack(track);
+        } else {
+            UnmuteTrack(track);
+        }
+    }
+
+    void DeactivateHype() {
+        isActive = false;
+        runtime = 0;
+        if (isToggler) {
+            ToggleTrack(track);
+        } else {
+            MuteTrack(track);
+        }
+        if (instance != null) {
+            Destroy(instance.gameObject);
+        }
     }
 
     void PlayAudio() {
         var audio = this.GetComponent<AudioSource>();
-        Debug.Log(audio);
         if (audio != null) {
             audio.Play();
         }
@@ -86,17 +111,6 @@ public class HypeButton : MonoBehaviour
         var audio = this.GetComponent<AudioSource>();
         if (audio != null) {
             audio.Stop();
-        }
-    }
-
-
-    void DeactivateHype() {
-        Debug.Log("Deactivating");
-        isActive = false;
-        runtime = 0;
-        MuteTrack(track);
-        if (instance != null) {
-            Destroy(instance.gameObject);
         }
     }
 
@@ -110,5 +124,12 @@ public class HypeButton : MonoBehaviour
         if (!playTrack) { return; }
         Music music = GameObject.Find("Music").GetComponent<Music>();
         music.UnmuteTrack(track);
+    }
+
+    void ToggleTrack(Music.Tracks track) {
+        Debug.Log("Toggling track");
+        if (!playTrack) { return; }
+        Music music = GameObject.Find("Music").GetComponent<Music>();
+        music.ToggleTrack(track);
     }
 }

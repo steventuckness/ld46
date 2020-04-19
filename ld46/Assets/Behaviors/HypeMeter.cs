@@ -25,7 +25,6 @@ public class HypeMeter : MonoBehaviour
     {
         int hypeSpriteNumber = GetSpriteIndex();
         int hype = (int) metrics.GetComponent<Metrics>().Hype;
-        Debug.Log(hype);
         if( hype < 5 ) {
             // Under 5 hype, blink last bar, alternating between sprite 0 and 1
             blinkTimer -= Time.deltaTime;

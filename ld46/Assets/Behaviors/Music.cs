@@ -45,4 +45,14 @@ public class Music : MonoBehaviour
 
         source.mute = false;
     }
+
+    public void ToggleTrack(Tracks track)
+    {
+        AudioSource source = this.tracking[track];
+        Debug.Log("Is muted? " + source.mute);
+        bool newVal = !source.mute;
+        source.mute = !source.mute;
+        Debug.Log(" Is muted? " + source.mute);
+    }
+
 }
