@@ -153,7 +153,7 @@ MonoBehaviour:
   money: 100
   moneyIncrementStartDelay: 0
   moneyIncrementTimeInterval: 1
-  hype: 55
+  startingHype: 25
   hypeDecrementFactor: 1
   hypeDecrementStartDelay: 0
   hypeDecrementTimeInterval: 1
