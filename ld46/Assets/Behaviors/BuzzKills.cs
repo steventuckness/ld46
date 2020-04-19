@@ -13,7 +13,7 @@ public class BuzzKills : MonoBehaviour
     public GameObject buzzKillNotificationSystemText;
     public int buzzKillIndex = -1;
     public string[] buzzKills = { "buzz kill!", "super buzz kill!", "super ultra buzz kill!" };
-    public int[] buzzKillHypeValues = { 4, 5, 10 };
+    public int[] buzzKillHypeValues = { 10, 15, 25 };
 
     private float timer = 0.0f;
     private string currentBuzzKillMessage = string.Empty;

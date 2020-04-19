@@ -8,26 +8,26 @@ public class Metrics : MonoBehaviour
 {
     const float HYPE_CAP = 100f;
 
-    public GameObject hourTextObject;
-    public GameObject moneyTextObject;
+    private GameObject hourTextObject;
+    private GameObject moneyTextObject;
 
-    public string currentHourText = string.Empty;
+    private string currentHourText = string.Empty;
     public static float currentHour = 0;
-    public float hourIncrementTimeInterval = 10f; //in seconds
+    private float hourIncrementTimeInterval = 10f; //in seconds
     private float hourIncrementTimer = 0.0f; //tracks time since last hour increment
 
-    public string currentMoneyText = string.Empty;
+    private string currentMoneyText = string.Empty;
     public float currentMoney;
     public float startingMoney = 0;
-    public float moneyIncrementStartDelay = 0;
+    //public float moneyIncrementStartDelay = 0;
     public float moneyIncrementTimeInterval = 1f;
     private float moneyIncrementTimer = 0.0f;
 
-    public float startingHype = 200;
+    public float startingHype = 31f;
     float hype;
-    public float hypeDecrementFactor = 50;
-    public float hypeDecrementStartDelay = 0;
-    public float hypeDecrementTimeInterval = 0.5f;
+    public float hypeDecrementFactor = 10f;
+    private float hypeDecrementStartDelay = 5f;
+    private float hypeDecrementTimeInterval = 2.5f;
 
     /**
      * Start is called before the first frame update
@@ -42,14 +42,18 @@ public class Metrics : MonoBehaviour
     {
         Debug.Log("Started Metrics in " + SceneManager.GetActiveScene().name);
 
+        hourTextObject = GameObject.Find("HourText");
+        moneyTextObject = GameObject.Find("MoneyText");
+
         // Only start everything up if we're in the main scene
-        if( SceneManager.GetActiveScene().name == "MainScene") {
+        if ( SceneManager.GetActiveScene().name == "MainScene") {
             hype = startingHype;
 
             currentMoney = startingMoney;
+            UpdateMoneyText();
 
             currentHour = 1;
-            hourTextObject.GetComponent<Text>().text = "Hour 1";
+            UpdateHourText();
 
             //InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
             //Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
@@ -65,9 +69,7 @@ public class Metrics : MonoBehaviour
         hourIncrementTimer += Time.deltaTime;
         if (hourIncrementTimer >= hourIncrementTimeInterval)
         {
-            currentHour++;
-            currentHourText = "Hour " + currentHour;
-            hourTextObject.GetComponent<Text>().text = currentHourText;
+            IncrementHour();
             hourIncrementTimer = 0;
         }
 
@@ -75,17 +77,50 @@ public class Metrics : MonoBehaviour
         if (moneyIncrementTimer >= moneyIncrementTimeInterval)
         {
             IncrementMoney();
-            currentMoneyText = "Money: " + currentMoney;
-            moneyTextObject.GetComponent<Text>().text = currentMoneyText;
             moneyIncrementTimer = 0;
         }
 
     }
 
+    void UpdateHourText()
+    {
+        currentHourText = "Hour " + currentHour;
+        hourTextObject.GetComponent<Text>().text = currentHourText;
+    }
+
+    void IncrementHour()
+    {
+        currentHour++;
+        UpdateHourText();
+    }
+
+    public float GetCurrentHour()
+    {
+        return currentHour;
+    }
+
+    void UpdateMoneyText()
+    {
+        currentMoneyText = "Money: " + currentMoney;
+        moneyTextObject.GetComponent<Text>().text = currentMoneyText;
+    }
+
     void IncrementMoney()
     {
-        currentMoney += hype;
-        // Debug.Log("Money value: " + money);
+        currentMoney += Mathf.Ceil(hype / 4);
+        UpdateMoneyText();
+        Debug.Log("Money value: " + currentMoney);
+    }
+
+    public void DecreaseMoney(int decreaseAmount)
+    {
+        currentMoney -= decreaseAmount;
+        UpdateMoneyText();
+    }
+
+    public float GetCurrentMoney()
+    {
+        return currentMoney;
     }
 
     // Called periodically
@@ -93,7 +128,7 @@ public class Metrics : MonoBehaviour
     {
         hype -= (hype == 0) ? 0 : hypeDecrementFactor;
         // Debug.Log("Hype value: " + hype);
-        if(hype == 0 ) {
+        if(hype <= 0 ) {
             CancelInvoke();
             SceneManager.LoadScene("Scenes/end-game");
         }

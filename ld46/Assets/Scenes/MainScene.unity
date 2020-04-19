@@ -186,12 +186,7 @@ PrefabInstance:
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: startingHype
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
-        type: 3}
-      propertyPath: hourIncrementTimeInterval
-      value: 10
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
@@ -203,6 +198,26 @@ PrefabInstance:
       propertyPath: moneyTextObject
       value: 
       objectReference: {fileID: 739290097}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: hypeDecrementFactor
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: hypeDecrementStartDelay
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: hourIncrementTimeInterval
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: hypeDecrementTimeInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2262480505305069315, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: m_Name
@@ -759,12 +774,37 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeFactor
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554138, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554138, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554141, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -774,12 +814,12 @@ PrefabInstance:
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.15
+      value: -10.22
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.92
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1105,7 +1145,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: duration
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1116,7 +1156,32 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
-      value: 10
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554138, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554138, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554141, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1126,12 +1191,12 @@ PrefabInstance:
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.3
+      value: -5.22
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.88
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1176,6 +1241,11 @@ PrefabInstance:
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554143, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1454,7 +1524,22 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554141, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1539,7 +1624,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1554,12 +1639,27 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: duration
-      value: 100
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeFactor
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554141, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1569,12 +1669,12 @@ PrefabInstance:
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.15
+      value: -10.27
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: -2.88
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1856,12 +1956,27 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
-      value: 100
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeFactor
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554141, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1871,12 +1986,12 @@ PrefabInstance:
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.3
+      value: -7.88
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.77
+      value: -6.23
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554142, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
