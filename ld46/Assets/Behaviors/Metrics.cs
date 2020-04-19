@@ -15,7 +15,7 @@ public class Metrics : MonoBehaviour
     public float hypeDecrementStartDelay = 0;
     public float hypeDecrementTimeInterval = 1f;
 
-    public float hour = 0;
+    public static float hour = 0; // TODO: If we need to pass more vars between scenes, make a static vars script instead
     public float hourIncrementStartDelay = 0;
     public float hourIncrementTimeInterval = 5f;
 
@@ -30,18 +30,22 @@ public class Metrics : MonoBehaviour
      */
     void Start()
     {
-        Debug.Log("Started Metrics");
+        Debug.Log("Started Metrics in " + SceneManager.GetActiveScene().name);
 
-        hype = startingHype;
+        // Only start everything up if we're in the main scene
+        if( SceneManager.GetActiveScene().name == "MainScene") {
+            hype = startingHype;
+            hour = 0;
 
-        InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
-        Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
+            InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
+            Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
 
-        InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
-        Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
+            InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
+            Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
 
-        InvokeRepeating("IncrementHour", hourIncrementStartDelay, hourIncrementTimeInterval);
-        Debug.Log("Calling IncrementHour every " + hourIncrementTimeInterval + " seconds");
+            InvokeRepeating("IncrementHour", hourIncrementStartDelay, hourIncrementTimeInterval);
+            Debug.Log("Calling IncrementHour every " + hourIncrementTimeInterval + " seconds");
+        }
     }
 
     // Update is called once per frame
@@ -52,15 +56,16 @@ public class Metrics : MonoBehaviour
     void IncrementMoney()
     {
         money += hype;
-        Debug.Log("Money value: " + money);
+        // Debug.Log("Money value: " + money);
     }
 
     // Called periodically
     void DecrementHype()
     {
         hype -= (hype == 0) ? 0 : hypeDecrementFactor;
-        Debug.Log("Hype value: " + hype);
+        // Debug.Log("Hype value: " + hype);
         if(hype == 0 ) {
+            CancelInvoke();
             SceneManager.LoadScene("Scenes/end-game");
         }
     }
@@ -75,6 +80,7 @@ public class Metrics : MonoBehaviour
 
     public void SubtractHype(float delta) {
         if(hype - delta <= 0) {
+            CancelInvoke();
             SceneManager.LoadScene("Scenes/end-game");
         } else {
             hype -= delta;
