@@ -108,7 +108,7 @@ public class Metrics : MonoBehaviour
 
     void UpdateMoneyText()
     {
-        currentMoneyText = "Money: " + currentMoney;
+        currentMoneyText = "$ " + currentMoney;
         moneyTextObject.GetComponent<Text>().text = currentMoneyText;
     }
 
