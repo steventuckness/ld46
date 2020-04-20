@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BuzzKills : MonoBehaviour
 {
     public float buzzKillFreeDurationInSeconds = 20f;
-    public int buzzKillRangeMax = 20000;
+    public int buzzKillRangeMax = 25000;
     public float buzzKillMessageLifeInSeconds = 2f;
     public float messageLetterAddDelayInSeconds = .1f;
     public GameObject metrics;
@@ -73,7 +73,8 @@ public class BuzzKills : MonoBehaviour
     
                     if (currentBuzzKillMessageIterator == currentBuzzKillMessage.Length)
                     {
-                        metrics.GetComponent<Metrics>().Hype -= buzzKillHypeSubtraction;
+                        metrics.GetComponent<Metrics>().HypeBuzzkill(buzzKillHypeSubtraction);
+                        buzzKillHypeSubtraction++;
                         StartCoroutine(continueShowingBuzzKillMessageForSeconds(buzzKillMessageLifeInSeconds));
                     }
                 }

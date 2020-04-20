@@ -70,7 +70,7 @@ public class HypeButton : MonoBehaviour
 
     void ActivateHype() {
         var MetricsObject = GameObject.Find("Metrics").GetComponent<Metrics>();
-        if (MetricsObject.currentMoney - cost <= 0) {
+        if (MetricsObject.currentMoney - cost < 0) {
             Debug.Log("Not enough money!");
             buzzkillManagerObject.GetComponent<BuzzKills>().PlayAlertIndicator();
             buzzkillManagerObject.GetComponent<BuzzKills>().ShowCustomMessage("Not enough money for that!", 2);

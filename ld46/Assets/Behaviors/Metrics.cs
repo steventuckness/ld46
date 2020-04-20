@@ -15,7 +15,7 @@ public class Metrics : MonoBehaviour
 
     private string currentHourText = string.Empty;
     public static float currentHour = 0;
-    private float hourIncrementTimeInterval = 10f; //in seconds
+    private float hourIncrementTimeInterval = 5f; //in seconds
     private float hourIncrementTimer = 0.0f; //tracks time since last hour increment
 
     private string currentMoneyText = string.Empty;
@@ -136,10 +136,16 @@ public class Metrics : MonoBehaviour
         return currentMoney;
     }
 
-    // Called periodically
+    //Called periodically, separate so that the crowdBoo isn't used for it
     void DecrementHype()
     {
         hype -= hypeDecrementFactor;
+        HypeUpdated.Invoke(hype);
+    }
+    //Called by buzzkills, separate so that the crowdBoo isn't used for it
+    public void HypeBuzzkill(int amount)
+    {
+        hype -= amount;
         HypeUpdated.Invoke(hype);
     }
 

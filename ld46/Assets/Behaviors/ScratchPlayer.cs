@@ -18,8 +18,8 @@ public class ScratchPlayer : MonoBehaviour
         audioSources[1] = scratchSound2;
         audioSources[2] = scratchSound3;
         
-        Music music = GameObject.Find("Music").GetComponent<Music>();
-        music.MuteAllTracks();
+        //Music music = GameObject.Find("Music").GetComponent<Music>();
+        //music.MuteAllTracks();
         activeScratchSound = audioSources[Random.Range(0, 3)];
         activeScratchSound.Play();
     }
@@ -29,8 +29,8 @@ public class ScratchPlayer : MonoBehaviour
     {
         if (!activeScratchSound.isPlaying && !hasStopped)
         {
-            Music music = GameObject.Find("Music").GetComponent<Music>();
-            music.UnmuteAllTracks();
+            //Music music = GameObject.Find("Music").GetComponent<Music>();
+            //music.UnmuteAllTracks();
             hasStopped = true;
         }
     }

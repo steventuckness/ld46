@@ -4733,6 +4733,7 @@ GameObject:
   - component: {fileID: 5384118952716577422}
   - component: {fileID: 3532512738219811116}
   - component: {fileID: 417821233413289695}
+  - component: {fileID: 3321678103517662017}
   m_Layer: 0
   m_Name: PlasmaExplosionRight
   m_TagString: Untagged
@@ -9562,3 +9563,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3321678103517662017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7607617695037822463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da89458d7d8b7424690cc2dc4fef62c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToLive: 10

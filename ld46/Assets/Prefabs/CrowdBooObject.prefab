@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3947967186634528860}
   - component: {fileID: 6736022632744717925}
+  - component: {fileID: 7711485110904494031}
   m_Layer: 0
   m_Name: CrowdBooObject
   m_TagString: Untagged
@@ -127,3 +128,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7711485110904494031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851760509845842358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da89458d7d8b7424690cc2dc4fef62c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
