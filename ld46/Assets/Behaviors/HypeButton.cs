@@ -9,20 +9,15 @@ public class HypeButton : MonoBehaviour
     public float hypeAddedOnUse;
     public int cost;
     public float duration;
-
     public bool playTrack;
-
     public bool isToggler;
-
     public Transform instantiate;
-
     public Music.Tracks track;
 
-     float runtime;
     private bool isActive;
-
     private Transform instance;
     private float currentFatigue;
+    private float runtime;
 
     void Start()
     {
