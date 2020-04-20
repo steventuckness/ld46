@@ -48,7 +48,7 @@ public class SpawnsDancersWithHype : MonoBehaviour
       var randomPoint = GetRandomPoint();
       int prefabIndex = random.Next(dancerPrefabs.Length);
       var newDancer = Instantiate(dancerPrefabs[prefabIndex]);
-      newDancer.transform.position = new Vector3(randomPoint.x, randomPoint.y, 170);
+      newDancer.transform.position = new Vector3(randomPoint.x, randomPoint.y, 170 + randomPoint.y / 10);
       FlipXAxis(newDancer);
       instances.Add(newDancer);
     }
