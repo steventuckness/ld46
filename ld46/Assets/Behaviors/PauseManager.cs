@@ -34,6 +34,11 @@ public class PauseManager : MonoBehaviour
 
     public void GoToScene(string scene) {
         SceneManager.LoadScene(scene);
+        
+        if (this.paused)
+        {
+            Unpause();
+        }
     }
 
     public void Unpause() {
