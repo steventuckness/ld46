@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HypeButton : MonoBehaviour
 {
+    public string hypeButtonName;
     public float fatigueIncreaseOnUse;
     public float fatigueDecreasePerSecond;
     public float hypeAddedOnUse;
@@ -14,6 +17,7 @@ public class HypeButton : MonoBehaviour
     public Transform instantiate;
     public Music.Tracks track;
 
+    private GameObject buttonExplainTextObject;
     private bool isActive;
     private Transform instance;
     private float currentFatigue;
@@ -21,6 +25,7 @@ public class HypeButton : MonoBehaviour
 
     void Start()
     {
+        buttonExplainTextObject = GameObject.Find("ButtonExplainText");
         isActive = false;
         runtime = 0;
         currentFatigue = 0;
@@ -127,4 +132,11 @@ public class HypeButton : MonoBehaviour
         Music music = GameObject.Find("Music").GetComponent<Music>();
         music.ToggleTrack(track);
     }
+
+    public void OnMouseEnter()
+    {
+        buttonExplainTextObject.GetComponent<Text>().text = hypeButtonName + " - $" + cost;
+    }
+
+
 }
