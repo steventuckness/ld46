@@ -43,7 +43,7 @@ public class HypeButton : MonoBehaviour
         if (isActive) {
             runtime += Time.deltaTime;
         }
-        if (runtime != 0 && runtime >= duration) {
+        if (runtime != 0 && runtime >= duration && duration > 0) {
             DeactivateHype();
         }
     }
