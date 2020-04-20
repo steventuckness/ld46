@@ -14,7 +14,7 @@ public class EndScreen : MonoBehaviour
         Text totalRevenueText = GameObject.Find("TotalRevenueText").GetComponent<Text>();
         totalRevenueText.text = "Total Revenue: $" + finalRevenue;
         Text scoreText = this.GetComponent<Text>();
-        scoreText.text = "You kept it going for " + hours + " hours.";
+        scoreText.text = "You kept it alive for " + hours + " hours.";
 
         Text comment = GameObject.Find("EncouragingCommentText").GetComponent<Text>();
         if(hours < 4) {
