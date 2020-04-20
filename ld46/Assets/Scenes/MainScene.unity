@@ -703,6 +703,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
         type: 3}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: playTrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: isToggler
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0483d247540f3094f8365f7623fbbebc, type: 3}
 --- !u!1 &172311441
@@ -1390,6 +1400,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
         type: 3}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: playTrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: isToggler
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8748692578231250730, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
         type: 3}
       propertyPath: hypeButtonName
