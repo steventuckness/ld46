@@ -420,6 +420,11 @@ PrefabInstance:
       propertyPath: cost
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Drums
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -937,6 +942,11 @@ PrefabInstance:
       propertyPath: track
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Percussion
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -1176,6 +1186,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5579832892952231841, guid: cad56985c1bbbd441a0bc7055dcb596e,
         type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Lasers
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -1700,6 +1715,11 @@ PrefabInstance:
       propertyPath: cost
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Confetti Cannon
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -2127,6 +2147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: cost
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Turntable
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -2926,6 +2951,11 @@ PrefabInstance:
       propertyPath: fatigueDecreasePerSecond
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Drop the Bass
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -3429,6 +3459,11 @@ PrefabInstance:
       propertyPath: fatigueDecreasePerSecond
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Smoke Machine
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -3591,6 +3626,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7146728135712795887, guid: 65e0a3f69963e1e4ab037f42bcba3928,
         type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Disco Time
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -4358,6 +4398,11 @@ PrefabInstance:
       propertyPath: fatigueDecreasePerSecond
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Flamethrowers
+      objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -4504,6 +4549,11 @@ PrefabInstance:
         type: 3}
       propertyPath: track
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Bass
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}

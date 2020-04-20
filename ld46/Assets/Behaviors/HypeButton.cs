@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class HypeButton : MonoBehaviour
 {
     public string hypeButtonName;
-    public GameObject buttonExplainTextObject;
-    
     public float fatigueIncreaseOnUse;
     public float fatigueDecreasePerSecond;
     public float hypeAddedOnUse;
@@ -19,6 +17,7 @@ public class HypeButton : MonoBehaviour
     public Transform instantiate;
     public Music.Tracks track;
 
+    private GameObject buttonExplainTextObject;
     private bool isActive;
     private Transform instance;
     private float currentFatigue;
