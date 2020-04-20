@@ -7,6 +7,9 @@ public class Metrics : MonoBehaviour
 {
     const float HYPE_CAP = 100;
 
+    public Transform crowdBooObj;
+    public Transform crowdCheerObj;
+
     private GameObject hourTextObject;
     private GameObject moneyTextObject;
 
@@ -19,14 +22,15 @@ public class Metrics : MonoBehaviour
     public float currentMoney;
     public float startingMoney = 0;
     //public float moneyIncrementStartDelay = 0;
-    public float moneyIncrementTimeInterval = 1f;
+    public float moneyIncrementTimeInterval = 2f;
     private float moneyIncrementTimer = 0.0f;
+    public static float totalRevenue;
 
-    public float startingHype = 31f;
+    public float startingHype = 41f;
     float hype;
     public float hypeDecrementFactor = 10f;
-    private float hypeDecrementStartDelay = 5f;
-    private float hypeDecrementTimeInterval = 2.5f;
+    private float hypeDecrementStartDelay = 10f;
+    private float hypeDecrementTimeInterval = 5f;
 
     public event Action<float> HypeUpdated = delegate { };
 
@@ -46,11 +50,12 @@ public class Metrics : MonoBehaviour
         hourTextObject = GameObject.Find("HourText");
         moneyTextObject = GameObject.Find("MoneyText");
 
-        // Only start everything up if we're in the main scene
-        Hype = startingHype;
+        hype = startingHype;
+        HypeUpdated.Invoke(hype);
 
         currentMoney = startingMoney;
         UpdateMoneyText();
+        totalRevenue = 0;
 
         currentHour = 1;
         UpdateHourText();
@@ -114,7 +119,9 @@ public class Metrics : MonoBehaviour
 
     void IncrementMoney()
     {
-        currentMoney += Mathf.Ceil(hype / 4);
+        float moneyIncrease = Mathf.Ceil(hype / 4);
+        totalRevenue += moneyIncrease;
+        currentMoney += moneyIncrease;
         UpdateMoneyText();
     }
 
@@ -132,14 +139,24 @@ public class Metrics : MonoBehaviour
     // Called periodically
     void DecrementHype()
     {
-        Hype -= hypeDecrementFactor;
+        hype -= hypeDecrementFactor;
+        HypeUpdated.Invoke(hype);
     }
 
-    public float Hype 
+    public float Hype
     {
-        get { return hype;  }
-        set {
+        get { return hype; }
+        set
+        {
             if (hype == value) return;
+            else if (value - hype >= 10)
+            {
+                Instantiate(crowdCheerObj);
+            }
+            else if (value - hype <= -5)
+            {
+                Instantiate(crowdBooObj);
+            }
             hype = Math.Min(value, HYPE_CAP);
             hype = Math.Max(hype, 0);
             HypeUpdated.Invoke(hype);

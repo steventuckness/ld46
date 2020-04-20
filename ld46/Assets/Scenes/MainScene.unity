@@ -192,7 +192,7 @@ PrefabInstance:
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: startingHype
-      value: 50
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
@@ -227,8 +227,25 @@ PrefabInstance:
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: startingMoney
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: moneyIncrementTimeInterval
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     - target: {fileID: 2262480505305069315, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: m_Name
@@ -419,17 +436,49 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: isToggler
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeButtonName
-      value: Drums
+      value: Drum Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: duration
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -547,6 +596,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 172311443}
     m_Modifications:
+    - target: {fileID: 8583502010033340940, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Record Scratch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583502010033340941, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Record Scratch
+      objectReference: {fileID: 0}
     - target: {fileID: 8814222703315115360, guid: 0483d247540f3094f8365f7623fbbebc,
         type: 3}
       propertyPath: m_Name
@@ -607,6 +666,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Record Scratch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: cost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 8814222703315115365, guid: 0483d247540f3094f8365f7623fbbebc,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0483d247540f3094f8365f7623fbbebc, type: 3}
 --- !u!1 &172311441
@@ -930,7 +1026,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: isToggler
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -940,7 +1036,39 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeButtonName
-      value: Percussion
+      value: Percussion Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: duration
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1205,6 +1333,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurnTableHypeLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679901, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679901, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679901, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679901, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Record Scratch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: cost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 8369175526153679903, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
+    - target: {fileID: 8748692578231250730, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Record Scratch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748692578231250733, guid: 0b9c3b3337f859544bdd0ffd9b4c2111,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Record Scratch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b9c3b3337f859544bdd0ffd9b4c2111, type: 3}
 --- !u!1001 &435423592
@@ -1237,7 +1432,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeAddedOnUse
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1255,6 +1450,23 @@ PrefabInstance:
       propertyPath: hypeButtonName
       value: Lasers
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: cost
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -1751,7 +1963,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: fatigueIncreaseOnUse
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1761,7 +1973,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeAddedOnUse
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -1777,13 +1989,25 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: cost
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeButtonName
       value: Confetti Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -1948,7 +2172,63 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: hypeButtonName
+      value: Flamethrowers
+      objectReference: {fileID: 0}
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: cost
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 801014085225524, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
+    - target: {fileID: 958714510081930125, guid: 8a78e27fac4b54c4dbf0509536aad0c7,
+        type: 3}
+      propertyPath: hypeButtonName
+      value: Flamethrowers
+      objectReference: {fileID: 0}
+    - target: {fileID: 958714510081930125, guid: 8a78e27fac4b54c4dbf0509536aad0c7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 958714510081930125, guid: 8a78e27fac4b54c4dbf0509536aad0c7,
+        type: 3}
+      propertyPath: cost
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 958714510081930125, guid: 8a78e27fac4b54c4dbf0509536aad0c7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 958714510081930125, guid: 8a78e27fac4b54c4dbf0509536aad0c7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 958714510081930125, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a78e27fac4b54c4dbf0509536aad0c7, type: 3}
 --- !u!4 &648159120 stripped
 Transform:
@@ -2725,6 +3005,108 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1160911438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 801014085225521, guid: 8a78e27fac4b54c4dbf0509536aad0c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 622783667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1160911439
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160911438}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1245362586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +3314,18 @@ PrefabInstance:
       propertyPath: hypeButtonName
       value: Drop the Bass
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -3043,6 +3437,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554143, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: adc25f8521ecc2043a0d26417726f446, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9f6eb8ae4e75974fa46df7c5def38e7, type: 3}
 --- !u!1 &1323830762
@@ -3111,8 +3510,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397721508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.56, y: -2.42, z: 38.01444}
-  m_LocalScale: {x: 0.42650795, y: 0.40757638, z: 0.5183015}
+  m_LocalPosition: {x: 6.56, y: -2.2, z: 38.01444}
+  m_LocalScale: {x: 0.55, y: 0.5, z: 0.5183015}
   m_Children: []
   m_Father: {fileID: 1323830763}
   m_RootOrder: 0
@@ -3199,23 +3598,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebea98622eb22da4c882376253cb6e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buzzKillFreeDurationInSeconds: 1
-  buzzKillRangeMax: 50000
+  buzzKillFreeDurationInSeconds: 20
+  buzzKillRangeMax: 20000
   buzzKillMessageLifeInSeconds: 2
-  messageLetterAddDelayInSeconds: 0.05
-  metrics: {fileID: 922882926}
-  buzzKillNotificationSystemText: {fileID: 1539223883}
+  messageLetterAddDelayInSeconds: 0.1
+  metrics: {fileID: 0}
+  buzzKillNotificationSystemText: {fileID: 0}
   buzzKillIndex: -1
   buzzKills:
   - New club accross the street just opened!
   - Someone fainted while dancing!
-  - A polar bear fight broke out!ll!
+  - A polar bear fight broke out!
   - Your turntable is overheating!
   - Speaker malfunction!
   - The cops have been called!
   - Global Warming!
   - Mama bear showed up!
-  buzzKillHypeSubtraction: 5
+  buzzKillHypeSubtraction: 10
 --- !u!82 &1397721513
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3359,6 +3758,18 @@ PrefabInstance:
       propertyPath: hypeButtonName
       value: Smoke Machine
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -3498,7 +3909,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: fatigueIncreaseOnUse
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -3508,7 +3919,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeAddedOnUse
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -3526,6 +3937,23 @@ PrefabInstance:
       propertyPath: hypeButtonName
       value: Disco Time
       objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: cost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: m_Sprite
@@ -3741,8 +4169,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.49400002}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282.1, y: -186.1}
-  m_SizeDelta: {x: 181.25916, y: 10.746258}
+  m_AnchoredPosition: {x: 282.1, y: -184.1}
+  m_SizeDelta: {x: 181.27457, y: 25.144138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539223885
 MonoBehaviour:
@@ -3764,7 +4192,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 10
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -3775,7 +4203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BUZZKILL
+  m_Text: Buzzkill Default
 --- !u!222 &1539223886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4265,7 +4693,7 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: isToggler
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
@@ -4275,7 +4703,39 @@ PrefabInstance:
     - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
       propertyPath: hypeButtonName
-      value: Bass
+      value: Bass Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueIncreaseOnUse
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: fatigueDecreasePerSecond
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: hypeAddedOnUse
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdBooObj
+      value: 
+      objectReference: {fileID: 3947967186634528860, guid: 7efc4e95a85baec48af9a5dfc79501ed,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: crowdCheerObj
+      value: 
+      objectReference: {fileID: 1163129904035984652, guid: 94a35408ca6898b46b351a349dd70c04,
+        type: 3}
+    - target: {fileID: 958370896004554136, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
+        type: 3}
+      propertyPath: duration
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 958370896004554137, guid: e9f6eb8ae4e75974fa46df7c5def38e7,
         type: 3}
