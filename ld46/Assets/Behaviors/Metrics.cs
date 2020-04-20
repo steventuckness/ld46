@@ -119,7 +119,7 @@ public class Metrics : MonoBehaviour
 
     void IncrementMoney()
     {
-        float moneyIncrease = Mathf.Ceil(hype / 4);
+        float moneyIncrease = Mathf.Ceil(hype / 5);
         totalRevenue += moneyIncrease;
         currentMoney += moneyIncrease;
         UpdateMoneyText();

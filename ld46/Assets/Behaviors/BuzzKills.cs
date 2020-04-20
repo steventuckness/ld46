@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BuzzKills : MonoBehaviour
 {
-    public float buzzKillFreeDurationInSeconds = 20f;
+    public float buzzKillFreeDurationInSeconds = 10f;
     public int buzzKillRangeMax = 25000;
     public float buzzKillMessageLifeInSeconds = 2f;
     public float messageLetterAddDelayInSeconds = .1f;
