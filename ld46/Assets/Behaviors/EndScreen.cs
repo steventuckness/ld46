@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndScreen : MonoBehaviour
 {
@@ -9,16 +10,19 @@ public class EndScreen : MonoBehaviour
     void Start()
     {
         int hours = (int)Metrics.currentHour;
-        UnityEngine.UI.Text scoreText = this.GetComponent<UnityEngine.UI.Text>();
+        int finalRevenue = (int)Metrics.totalRevenue;
+        Text totalRevenueText = GameObject.Find("TotalRevenueText").GetComponent<Text>();
+        totalRevenueText.text = "Total Revenue: $" + finalRevenue;
+        Text scoreText = this.GetComponent<Text>();
         scoreText.text = "You kept it going for " + hours + " hours.";
 
-        UnityEngine.UI.Text comment = GameObject.Find("EncouragingCommentText").GetComponent<UnityEngine.UI.Text>();
+        Text comment = GameObject.Find("EncouragingCommentText").GetComponent<Text>();
         if(hours < 4) {
-            comment.text = "I know children's birthday parties that lasted longer than that";
+            comment.text = "I know children's birthday parties that lasted longer than that.";
         } else if (hours < 8) {
-            comment.text = "LOTR kept people's attention longer than your party";
+            comment.text = "Lord of the Rings kept people's attention longer than your party.";
         } else if (hours < 12) {
-            comment.text = "Couldn't quite keep it going until the sun came up";
+            comment.text = "Couldn't quite keep it going until the sun came up.";
         } else if (hours < 24) {
             comment.text = "Got pretty close to 1 full day, didn't you?";
         } else if (hours < 48) {
