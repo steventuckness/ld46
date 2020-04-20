@@ -10,7 +10,6 @@ public class Music : MonoBehaviour
     public AudioSource pads;
     public AudioSource stabs;
     private Dictionary<Tracks, AudioSource> tracking;
-    private float time = 0;
 
     public enum Tracks
     {
@@ -55,4 +54,22 @@ public class Music : MonoBehaviour
         Debug.Log(" Is muted? " + source.mute);
     }
 
+    public void MuteAllTracks()
+    {
+        if (this.tracking.Count == 0) { return; }
+        foreach(var track in this.tracking)
+        {
+            if (track.Value == null) return;
+            track.Value.volume = 0;
+            Debug.Log("Muted: " + track.Value.name);
+        }
+    }
+
+    public void UnmuteAllTracks()
+    {
+        foreach(var track in this.tracking)
+        {
+            track.Value.volume = 1f;
+        }
+    }
 }
