@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: b7b551a58775bea45878a3d2b80af7bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -197913485593219813
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_0
+  - first:
+      213: 8454229071284502725
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_1
+  - first:
+      213: -3664356281590828954
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_2
+  - first:
+      213: -595357452156007630
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_3
+  - first:
+      213: 7992443185977521046
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_4
+  - first:
+      213: 4014533120889295508
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_5
+  - first:
+      213: 8489909436797257574
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_6
+  - first:
+      213: -667440658944070559
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_7
+  - first:
+      213: 6182040823043399085
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_8
+  - first:
+      213: -1060183964825144415
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_9
+  - first:
+      213: 2536830157255032773
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_10
+  - first:
+      213: 5180237523574629706
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_11
+  - first:
+      213: -650341566328942045
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_12
+  - first:
+      213: 1743991619016386016
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_13
+  - first:
+      213: -1706250794558832206
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_14
+  - first:
+      213: -5666214686194374526
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_15
+  - first:
+      213: 4740444078475669667
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_16
+  - first:
+      213: -494105322757869841
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_17
+  - first:
+      213: 9125990010717229910
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_18
+  - first:
+      213: 845207140419427218
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_19
+  - first:
+      213: 2838378750156914835
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_20
+  - first:
+      213: 7392165349000506568
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_21
+  - first:
+      213: -3712301630369204716
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_22
+  - first:
+      213: 5531066140323228293
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_23
+  - first:
+      213: 7574867456820051787
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_24
+  - first:
+      213: -344312948025423035
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_25
+  - first:
+      213: -4633845162953148590
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_26
+  - first:
+      213: -8507435475484600440
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_27
+  - first:
+      213: 7961251104532170786
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_28
+  - first:
+      213: -4221186600411662658
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_29
+  - first:
+      213: -4289981967458810228
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_30
+  - first:
+      213: 2331669961575548364
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_31
+  - first:
+      213: -253579395161292485
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_32
+  - first:
+      213: -5200010436669506102
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_33
+  - first:
+      213: 6337853409315230641
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_34
+  - first:
+      213: -3476580063356401910
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_35
+  - first:
+      213: 2686760924965163107
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_36
+  - first:
+      213: 3090146226839452412
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_37
+  - first:
+      213: 2921103339786527384
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_38
+  - first:
+      213: -2405599238728435755
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_39
+  - first:
+      213: 223318727860030976
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_40
+  - first:
+      213: -8436078557107116897
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_41
+  - first:
+      213: 3258667293600394195
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_42
+  - first:
+      213: 4063020381814919771
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_43
+  - first:
+      213: -8567708379012127967
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_44
+  - first:
+      213: -6360778490026122442
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_45
+  - first:
+      213: 6892622613596806614
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_46
+  - first:
+      213: -4677100563935595890
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_47
+  - first:
+      213: -6507896901561669975
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_48
+  - first:
+      213: -2440257171665415886
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_49
+  - first:
+      213: -149632647648815560
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_50
+  - first:
+      213: 5865617506349400254
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_51
+  - first:
+      213: 7616037610292478640
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_52
+  - first:
+      213: 7465051139390869298
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_53
+  - first:
+      213: 704965444493714305
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_54
+  - first:
+      213: 9038887649321232534
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_55
+  - first:
+      213: 3191540938589096405
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_56
+  - first:
+      213: -7979568135984663863
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_57
+  - first:
+      213: 2983536910932747633
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_58
+  - first:
+      213: -4514672859215605477
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_59
+  - first:
+      213: 563825231411937916
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_60
+  - first:
+      213: 4704893427918667302
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_61
+  - first:
+      213: -3890810337581687813
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_62
+  - first:
+      213: -1684775483754050135
+    second: Disco_Ball_2_with_Lights_Sprite_Sheet_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Disco_Ball_2_with_Lights_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3013
+        width: 1922
+        height: 1083
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1de4f2cbbed04df0800000000000000
+      internalID: -197913485593219813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disco_Ball_2_with_Lights_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 3017
+        width: 1932
+        height: 1079
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c081b34c84735570800000000000000
+      internalID: 8454229071284502725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disco_Ball_2_with_Lights_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1929
+        width: 1922
+        height: 1092
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660be416067952dc0800000000000000
+      internalID: -3664356281590828954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disco_Ball_2_with_Lights_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 1929
+        width: 1902
+        height: 1084
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b0cd53d8ddcb7f0800000000000000
+      internalID: -595357452156007630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
