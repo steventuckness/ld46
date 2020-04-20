@@ -24,8 +24,8 @@ public class EndScreen : MonoBehaviour
         } else if (hours < 12) {
             comment.text = "Couldn't quite keep it going until the sun came up.";
         } else if (hours < 24) {
-            comment.text = "Got pretty close to 1 full day, didn't you?";
-        } else if (hours < 48) {
+            comment.text = "Got pretty close to a full day, didn't you?";
+        } else if (hours < 36) {
             comment.text = "Over 24 hours... I guess that's a start.";
         } else {
             comment.text = "Now that's what I call a party!";

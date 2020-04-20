@@ -3618,7 +3618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebea98622eb22da4c882376253cb6e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buzzKillFreeDurationInSeconds: 20
+  buzzKillFreeDurationInSeconds: 10
   buzzKillRangeMax: 25000
   buzzKillMessageLifeInSeconds: 2
   messageLetterAddDelayInSeconds: 0.1
