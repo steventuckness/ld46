@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class HypeMeter : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class HypeMeter : MonoBehaviour
     int currentSpriteNumber;
     float blinkTimer = blinkTimeout;
 
-    const string spriteFilepath = "Assets/Sprites/hype-meter-spritesheet.png";
+    const string spriteFilepath = "hype-meter-spritesheet";
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +24,8 @@ public class HypeMeter : MonoBehaviour
     void Update()
     {
         int hypeSpriteNumber = GetSpriteIndex();
-        int hype = (int)(metrics.GetComponent<Metrics>().GetHype());
-
+        int hype = (int) metrics.GetComponent<Metrics>().Hype;
+        // Debug.Log(hype);
         if( hype < 5 ) {
             // Under 5 hype, blink last bar, alternating between sprite 0 and 1
             blinkTimer -= Time.deltaTime;
@@ -54,13 +53,14 @@ public class HypeMeter : MonoBehaviour
             index = 10;
         }
 
-        Object[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(spriteFilepath);
-        Sprite newSprite = sprites[index] as Sprite;
+        Object[] sprites = Resources.LoadAll(spriteFilepath);
+        // The array returned by Resources.LoadAll has an empty first element, so add one here
+        Sprite newSprite = sprites[index+1] as Sprite;
         this.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 
     int GetSpriteIndex() {
-        int hype = (int)(metrics.GetComponent<Metrics>().GetHype());
+        int hype = (int) metrics.GetComponent<Metrics>().Hype;
         return (hype / 10) + 1; // always have at least 1 bar
     }
 }

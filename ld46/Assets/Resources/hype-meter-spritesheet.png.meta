@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 1c20200cd39491c4a9cf288cf1e130af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2625732809445914028
+    second: hype-meter-spritesheet_0
+  - first:
+      213: -8108591603270604776
+    second: hype-meter-spritesheet_1
+  - first:
+      213: -7788256938799629842
+    second: hype-meter-spritesheet_2
+  - first:
+      213: 4981418228095826813
+    second: hype-meter-spritesheet_3
+  - first:
+      213: -1628367622622245042
+    second: hype-meter-spritesheet_4
+  - first:
+      213: 5864235310382757019
+    second: hype-meter-spritesheet_5
+  - first:
+      213: 1224319264176528251
+    second: hype-meter-spritesheet_6
+  - first:
+      213: 6323877575850496773
+    second: hype-meter-spritesheet_7
+  - first:
+      213: 5123087843844223301
+    second: hype-meter-spritesheet_8
+  - first:
+      213: -2079481312983119136
+    second: hype-meter-spritesheet_9
+  - first:
+      213: -6340328859109496065
+    second: hype-meter-spritesheet_10
+  - first:
+      213: 226474144916179474
+    second: hype-meter-spritesheet_11
+  - first:
+      213: -3920565742571924759
+    second: hype-meter-spritesheet_12
+  - first:
+      213: 3897254718934463974
+    second: hype-meter-spritesheet_13
+  - first:
+      213: -3425248698433735234
+    second: hype-meter-spritesheet_14
+  - first:
+      213: 7840224332873723481
+    second: hype-meter-spritesheet_15
+  - first:
+      213: -1460629679934225408
+    second: hype-meter-spritesheet_16
+  - first:
+      213: -1742211422076883962
+    second: hype-meter-spritesheet_17
+  - first:
+      213: 1952080519942698542
+    second: hype-meter-spritesheet_18
+  - first:
+      213: -4577318121217794267
+    second: hype-meter-spritesheet_19
+  - first:
+      213: 2062208159531718711
+    second: hype-meter-spritesheet_20
+  - first:
+      213: 6454427152986979587
+    second: hype-meter-spritesheet_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 4320
+        width: 967
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5bc16141a707420800000000000000
+      internalID: 2625732809445914028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 4320
+        width: 967
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8182752e5ee787f80800000000000000
+      internalID: -8108591603270604776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 4320
+        width: 967
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9706ff39d8ae390800000000000000
+      internalID: -7788256938799629842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 4320
+        width: 967
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bbe4b5c7d812540800000000000000
+      internalID: 4981418228095826813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4020
+        y: 4320
+        width: 967
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f8ad15640e669e0800000000000000
+      internalID: -1628367622622245042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3322
+        width: 967
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94baaad1f2f16150800000000000000
+      internalID: 5864235310382757019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 3322
+        width: 967
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bd8e052e7adf010800000000000000
+      internalID: 1224319264176528251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 3322
+        width: 967
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50390af562de2c750800000000000000
+      internalID: 6323877575850496773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 3322
+        width: 967
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541f47d204dd81740800000000000000
+      internalID: 5123087843844223301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 4020
+        y: 3322
+        width: 967
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea049e63c23423e0800000000000000
+      internalID: -2079481312983119136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hype-meter-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2321
+        width: 969
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaee91ce70a208a0800000000000000
+      internalID: -6340328859109496065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HypeButton : MonoBehaviour
 {
-    public float fatigueIncrease;
-    public float fatigueCooldown;
-    public float hypeFactor;
+    public float fatigueIncreaseOnUse;
+    public float fatigueDecreasePerSecond;
+    public float hypeAddedOnUse;
     public int cost;
     public float duration;
 
@@ -34,7 +35,11 @@ public class HypeButton : MonoBehaviour
     void Update()
     {
         if (currentFatigue > 0) {
-            currentFatigue -= fatigueCooldown / Time.deltaTime;
+            currentFatigue -= fatigueDecreasePerSecond * Time.deltaTime;
+            if (currentFatigue < 0)
+            {
+                currentFatigue = 0;
+            }
         }
         if (isActive) {
             runtime += Time.deltaTime;
@@ -50,14 +55,17 @@ public class HypeButton : MonoBehaviour
 
     void ActivateHype()
     {
-        var m = GameObject.Find("Metrics").GetComponent<Metrics>();
-        if (m.money - cost <= 0) {
+        var MetricsObject = GameObject.Find("Metrics").GetComponent<Metrics>();
+        if (MetricsObject.currentMoney - cost <= 0) {
             Debug.Log("Not enough money!");
+            GameObject.Find("Hype Buttons").GetComponent<AudioSource>().Play();
+            GameObject.Find("NotEnoughMoneyText").GetComponent<Text>().enabled = true;
+            StartCoroutine(this.continueShowingNotEnoughMoneyMessageForSeconds(.5f));
             return;
         }
-        m.money -= cost;
-        m.AddHype(hypeFactor - currentFatigue);
-        currentFatigue += fatigueIncrease;
+        MetricsObject.DecreaseMoney(cost);
+        MetricsObject.Hype += hypeAddedOnUse - currentFatigue;
+        currentFatigue += fatigueIncreaseOnUse;
         if (isToggler && isActive) {
             DeactivateHype();
             return;
@@ -68,6 +76,12 @@ public class HypeButton : MonoBehaviour
             instance = Instantiate(instantiate);
         }
         isActive = true;
+    }
+
+    private IEnumerator continueShowingNotEnoughMoneyMessageForSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        GameObject.Find("NotEnoughMoneyText").GetComponent<Text>().enabled = false;
     }
 
     void PlayAudio() {

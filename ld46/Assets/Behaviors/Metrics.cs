@@ -1,23 +1,34 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Metrics : MonoBehaviour
 {
-    const float HYPE_CAP = 100f;
+    const float HYPE_CAP = 100;
 
-    public float money = 0;
-    public float moneyIncrementStartDelay = 0;
+    private GameObject hourTextObject;
+    private GameObject moneyTextObject;
+
+    private string currentHourText = string.Empty;
+    public static float currentHour = 0;
+    private float hourIncrementTimeInterval = 10f; //in seconds
+    private float hourIncrementTimer = 0.0f; //tracks time since last hour increment
+
+    private string currentMoneyText = string.Empty;
+    public float currentMoney;
+    public float startingMoney = 0;
+    //public float moneyIncrementStartDelay = 0;
     public float moneyIncrementTimeInterval = 1f;
+    private float moneyIncrementTimer = 0.0f;
 
-    public float startingHype = 0;
-    float hype = 0;
-    public float hypeDecrementFactor = 1;
-    public float hypeDecrementStartDelay = 0;
-    public float hypeDecrementTimeInterval = 1f;
+    public float startingHype = 31f;
+    float hype;
+    public float hypeDecrementFactor = 10f;
+    private float hypeDecrementStartDelay = 5f;
+    private float hypeDecrementTimeInterval = 2.5f;
 
-    public float hour = 0;
-    public float hourIncrementStartDelay = 0;
-    public float hourIncrementTimeInterval = 5f;
+    public event Action<float> HypeUpdated = delegate { };
 
     /**
      * Start is called before the first frame update
@@ -30,64 +41,109 @@ public class Metrics : MonoBehaviour
      */
     void Start()
     {
-        Debug.Log("Started Metrics");
+        Debug.Log("Started Metrics in " + SceneManager.GetActiveScene().name);
 
-        hype = startingHype;
+        hourTextObject = GameObject.Find("HourText");
+        moneyTextObject = GameObject.Find("MoneyText");
 
-        InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
-        Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
+        // Only start everything up if we're in the main scene
+        Hype = startingHype;
+
+        currentMoney = startingMoney;
+        UpdateMoneyText();
+
+        currentHour = 1;
+        UpdateHourText();
+
+        //InvokeRepeating("IncrementMoney", moneyIncrementStartDelay, moneyIncrementTimeInterval);
+        //Debug.Log("Calling IncrementMoney every " + moneyIncrementTimeInterval + " seconds");
 
         InvokeRepeating("DecrementHype", hypeDecrementStartDelay, hypeDecrementTimeInterval);
         Debug.Log("Calling DecrementHype every " + hypeDecrementTimeInterval + " seconds");
 
-        InvokeRepeating("IncrementHour", hourIncrementStartDelay, hourIncrementTimeInterval);
-        Debug.Log("Calling IncrementHour every " + hourIncrementTimeInterval + " seconds");
+        HypeUpdated += value => {
+            if (hype <= 0)
+            {
+                CancelInvoke();
+                SceneManager.LoadScene("Scenes/end-game");
+            }
+        };
     }
 
-    // Update is called once per frame
+  // Update is called once per frame
     void Update()
     {
+        hourIncrementTimer += Time.deltaTime;
+        if (hourIncrementTimer >= hourIncrementTimeInterval)
+        {
+            IncrementHour();
+            hourIncrementTimer = 0;
+        }
+
+        moneyIncrementTimer += Time.deltaTime;
+        if (moneyIncrementTimer >= moneyIncrementTimeInterval)
+        {
+            IncrementMoney();
+            moneyIncrementTimer = 0;
+        }
+
+    }
+
+    void UpdateHourText()
+    {
+        currentHourText = "Hour " + currentHour;
+        hourTextObject.GetComponent<Text>().text = currentHourText;
+    }
+
+    void IncrementHour()
+    {
+        currentHour++;
+        UpdateHourText();
+    }
+
+    public float GetCurrentHour()
+    {
+        return currentHour;
+    }
+
+    void UpdateMoneyText()
+    {
+        currentMoneyText = "Money: " + currentMoney;
+        moneyTextObject.GetComponent<Text>().text = currentMoneyText;
     }
 
     void IncrementMoney()
     {
-        money += hype;
-        Debug.Log("Money value: " + money);
+        currentMoney += Mathf.Ceil(hype / 4);
+        UpdateMoneyText();
+        Debug.Log("Money value: " + currentMoney);
+    }
+
+    public void DecreaseMoney(int decreaseAmount)
+    {
+        currentMoney -= decreaseAmount;
+        UpdateMoneyText();
+    }
+
+    public float GetCurrentMoney()
+    {
+        return currentMoney;
     }
 
     // Called periodically
     void DecrementHype()
     {
-        hype -= (hype == 0) ? 0 : hypeDecrementFactor;
-        Debug.Log("Hype value: " + hype);
-        if(hype == 0 ) {
-            SceneManager.LoadScene("Scenes/end-game");
-        }
+        Hype -= hypeDecrementFactor;
     }
 
-    public void AddHype(float delta) {
-        if(hype + delta > HYPE_CAP) {
-            hype = HYPE_CAP;
-        } else {
-            hype += delta;
-        }
-    }
-
-    public void SubtractHype(float delta) {
-        if(hype - delta <= 0) {
-            SceneManager.LoadScene("Scenes/end-game");
-        } else {
-            hype -= delta;
-        }
-    }
-
-    public float GetHype() {
-        return hype;
-    }
-
-    void IncrementHour()
+    public float Hype 
     {
-        hour += 1;
-        Debug.Log("Hour " + hour);
+        get { return hype;  }
+        set {
+            if (hype == value) return;
+            hype = Math.Min(value, HYPE_CAP);
+            hype = Math.Max(hype, 0);
+            HypeUpdated.Invoke(hype);
+        }
     }
 }
