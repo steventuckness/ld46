@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class BuzzKills : MonoBehaviour
 {
-    public float buzzKillFreeDurationInSeconds = 60.0f;
+    public float buzzKillFreeDurationInSeconds = 20f;
     public int buzzKillRangeMax = 20000;
     public float buzzKillMessageLifeInSeconds = 2f;
-    public float messageLetterAddDelayInSeconds = .5f;
+    public float messageLetterAddDelayInSeconds = .1f;
     public GameObject metrics;
     public GameObject buzzKillNotificationSystemText;
     public int buzzKillIndex = -1;
@@ -22,7 +22,7 @@ public class BuzzKills : MonoBehaviour
         "Global Warming!",
         "Mama bear showed up!"
     };
-    public int buzzKillHypeSubtraction = 5;
+    public int buzzKillHypeSubtraction = 10;
 
     private float timer = 0.0f;
     private string currentBuzzKillMessage = string.Empty;
@@ -33,6 +33,8 @@ public class BuzzKills : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        metrics = GameObject.Find("Metrics");
+        buzzKillNotificationSystemText = GameObject.Find("Buzzkill Text");
         buzzKillNotificationSystemText.GetComponent<Text>().text = "";
         this.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<Animator>().enabled = false;
@@ -51,16 +53,16 @@ public class BuzzKills : MonoBehaviour
 
                 if (buzzKill <= timer)
                 {
-                    this.GetComponent<SpriteRenderer>().enabled = true;
-                    this.GetComponent<Animator>().enabled = true;
-                    this.GetComponent<AudioSource>().Play();
+                    PlayAlertIndicator();
                     this.buzzKillIndex = Random.Range(0, buzzKills.Length);
-                    this.currentBuzzKillMessage = buzzKills[buzzKillIndex] + " (-" + buzzKillHypeSubtraction + " hype)";
+                    this.currentBuzzKillMessage = buzzKills[buzzKillIndex] + " (hype lost)";
                     this.isBuzzKillInProgress = true;
                 }
             }
             else
             {
+                this.GetComponent<SpriteRenderer>().enabled = true;
+                this.GetComponent<Animator>().enabled = true;
                 secondsSinceLastBuzzKillMessageLetterAdded += Time.deltaTime;
 
                 if (this.secondsSinceLastBuzzKillMessageLetterAdded >= this.messageLetterAddDelayInSeconds && currentBuzzKillMessageIterator <= currentBuzzKillMessage.Length)
@@ -77,10 +79,17 @@ public class BuzzKills : MonoBehaviour
                 }
             }
         }
-   }
+    }
 
-   private IEnumerator continueShowingBuzzKillMessageForSeconds(float seconds) 
-   {
+    public void PlayAlertIndicator()
+    {
+        this.GetComponent<SpriteRenderer>().enabled = true;
+        this.GetComponent<Animator>().enabled = true;
+        this.GetComponent<AudioSource>().Play();
+    }
+
+    private IEnumerator continueShowingBuzzKillMessageForSeconds(float seconds)
+    {
         yield return new WaitForSeconds(seconds);
         this.secondsSinceLastBuzzKillMessageLetterAdded = 0f;
         this.currentBuzzKillMessage = string.Empty;
@@ -90,5 +99,19 @@ public class BuzzKills : MonoBehaviour
         this.buzzKillIndex = -1;
         this.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<Animator>().enabled = false;
-   }
+    }
+
+    public void ShowCustomMessage(string buzzkillMessage, int secondsForMessage)
+    {
+        buzzKillNotificationSystemText.GetComponent<Text>().text = buzzkillMessage;
+        StartCoroutine(continueShowingOtherMessageForSeconds(secondsForMessage));
+    }
+
+    private IEnumerator continueShowingOtherMessageForSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        buzzKillNotificationSystemText.GetComponent<Text>().text = this.currentBuzzKillMessage;
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        this.GetComponent<Animator>().enabled = false;
+    }
 }

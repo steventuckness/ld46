@@ -19,14 +19,14 @@ public class Metrics : MonoBehaviour
     public float currentMoney;
     public float startingMoney = 0;
     //public float moneyIncrementStartDelay = 0;
-    public float moneyIncrementTimeInterval = 1f;
+    public float moneyIncrementTimeInterval = 2f;
     private float moneyIncrementTimer = 0.0f;
 
-    public float startingHype = 31f;
+    public float startingHype = 41f;
     float hype;
     public float hypeDecrementFactor = 10f;
-    private float hypeDecrementStartDelay = 5f;
-    private float hypeDecrementTimeInterval = 2.5f;
+    private float hypeDecrementStartDelay = 10f;
+    private float hypeDecrementTimeInterval = 5f;
 
     public event Action<float> HypeUpdated = delegate { };
 

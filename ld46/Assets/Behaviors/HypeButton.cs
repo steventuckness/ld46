@@ -18,6 +18,7 @@ public class HypeButton : MonoBehaviour
     public Music.Tracks track;
 
     private GameObject buttonExplainTextObject;
+    private GameObject buzzkillManagerObject;
     private bool isActive;
     private Transform instance;
     private float currentFatigue;
@@ -26,6 +27,7 @@ public class HypeButton : MonoBehaviour
     void Start()
     {
         buttonExplainTextObject = GameObject.Find("ButtonExplainText");
+        buzzkillManagerObject = GameObject.Find("buzzKillManager");
         isActive = false;
         runtime = 0;
         currentFatigue = 0;
@@ -70,6 +72,8 @@ public class HypeButton : MonoBehaviour
         var MetricsObject = GameObject.Find("Metrics").GetComponent<Metrics>();
         if (MetricsObject.currentMoney - cost <= 0) {
             Debug.Log("Not enough money!");
+            buzzkillManagerObject.GetComponent<BuzzKills>().PlayAlertIndicator();
+            buzzkillManagerObject.GetComponent<BuzzKills>().ShowCustomMessage("Not enough money for that!", 2);
             return;
         }
         MetricsObject.DecreaseMoney(cost);
