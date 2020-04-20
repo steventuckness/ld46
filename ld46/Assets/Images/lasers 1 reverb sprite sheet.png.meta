@@ -1,7 +1,199 @@
 fileFormatVersion: 2
 guid: 39f4f9c5c808a4340983a630ae2371f5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2672834160182889171
+    second: lasers 1 reverb sprite sheet_0
+  - first:
+      213: 3638121106796030394
+    second: lasers 1 reverb sprite sheet_1
+  - first:
+      213: -2117151833441391892
+    second: lasers 1 reverb sprite sheet_2
+  - first:
+      213: 8402530391567539747
+    second: lasers 1 reverb sprite sheet_3
+  - first:
+      213: -2951567857427835959
+    second: lasers 1 reverb sprite sheet_4
+  - first:
+      213: -562707878307132248
+    second: lasers 1 reverb sprite sheet_5
+  - first:
+      213: 4994057151819107631
+    second: lasers 1 reverb sprite sheet_6
+  - first:
+      213: -1307029966482305503
+    second: lasers 1 reverb sprite sheet_7
+  - first:
+      213: -5302448064528861855
+    second: lasers 1 reverb sprite sheet_8
+  - first:
+      213: 8663242167742448313
+    second: lasers 1 reverb sprite sheet_9
+  - first:
+      213: -3901205122509344101
+    second: lasers 1 reverb sprite sheet_10
+  - first:
+      213: 5494849790759636622
+    second: lasers 1 reverb sprite sheet_11
+  - first:
+      213: -1546278056592198685
+    second: lasers 1 reverb sprite sheet_12
+  - first:
+      213: 5737946355097935161
+    second: lasers 1 reverb sprite sheet_13
+  - first:
+      213: -5654461791945634813
+    second: lasers 1 reverb sprite sheet_14
+  - first:
+      213: -2816113216303810845
+    second: lasers 1 reverb sprite sheet_15
+  - first:
+      213: 1313567962120200901
+    second: lasers 1 reverb sprite sheet_16
+  - first:
+      213: -1218586992981919342
+    second: lasers 1 reverb sprite sheet_17
+  - first:
+      213: -2326190230351897885
+    second: lasers 1 reverb sprite sheet_18
+  - first:
+      213: 6754025774772351249
+    second: lasers 1 reverb sprite sheet_19
+  - first:
+      213: -2370181081470591708
+    second: lasers 1 reverb sprite sheet_20
+  - first:
+      213: -294845828283686070
+    second: lasers 1 reverb sprite sheet_21
+  - first:
+      213: -5536607544187836054
+    second: lasers 1 reverb sprite sheet_22
+  - first:
+      213: -6070763230385442217
+    second: lasers 1 reverb sprite sheet_23
+  - first:
+      213: 7157514020303020004
+    second: lasers 1 reverb sprite sheet_24
+  - first:
+      213: 5004614339465909173
+    second: lasers 1 reverb sprite sheet_25
+  - first:
+      213: 8002461587066621139
+    second: lasers 1 reverb sprite sheet_26
+  - first:
+      213: 5534378308644259001
+    second: lasers 1 reverb sprite sheet_27
+  - first:
+      213: -2736614863639130572
+    second: lasers 1 reverb sprite sheet_28
+  - first:
+      213: 283758675608013334
+    second: lasers 1 reverb sprite sheet_29
+  - first:
+      213: -5224729740133853305
+    second: lasers 1 reverb sprite sheet_30
+  - first:
+      213: 6358896764825905277
+    second: lasers 1 reverb sprite sheet_31
+  - first:
+      213: 4598591239195679622
+    second: lasers 1 reverb sprite sheet_32
+  - first:
+      213: 1176822733422438843
+    second: lasers 1 reverb sprite sheet_33
+  - first:
+      213: 6603957395247722409
+    second: lasers 1 reverb sprite sheet_34
+  - first:
+      213: 6291297316072470012
+    second: lasers 1 reverb sprite sheet_35
+  - first:
+      213: 8029496294670484620
+    second: lasers 1 reverb sprite sheet_36
+  - first:
+      213: -2673846399908814110
+    second: lasers 1 reverb sprite sheet_37
+  - first:
+      213: 2921381729917641808
+    second: lasers 1 reverb sprite sheet_38
+  - first:
+      213: 3656823766492973724
+    second: lasers 1 reverb sprite sheet_39
+  - first:
+      213: 934345840957217528
+    second: lasers 1 reverb sprite sheet_40
+  - first:
+      213: -6597037134960052494
+    second: lasers 1 reverb sprite sheet_41
+  - first:
+      213: -6037753717457640399
+    second: lasers 1 reverb sprite sheet_42
+  - first:
+      213: -2519121151508326683
+    second: lasers 1 reverb sprite sheet_43
+  - first:
+      213: -5917113672281181337
+    second: lasers 1 reverb sprite sheet_44
+  - first:
+      213: -3437048346546052313
+    second: lasers 1 reverb sprite sheet_45
+  - first:
+      213: -1912377028846706603
+    second: lasers 1 reverb sprite sheet_46
+  - first:
+      213: -6316693824323964590
+    second: lasers 1 reverb sprite sheet_47
+  - first:
+      213: 765560092959522625
+    second: lasers 1 reverb sprite sheet_48
+  - first:
+      213: 4135990647696388205
+    second: lasers 1 reverb sprite sheet_49
+  - first:
+      213: 7064730644944291391
+    second: lasers 1 reverb sprite sheet_50
+  - first:
+      213: 6798888514395619500
+    second: lasers 1 reverb sprite sheet_51
+  - first:
+      213: -2870802151821093106
+    second: lasers 1 reverb sprite sheet_52
+  - first:
+      213: 2942576585320844224
+    second: lasers 1 reverb sprite sheet_53
+  - first:
+      213: 8926139643626986768
+    second: lasers 1 reverb sprite sheet_54
+  - first:
+      213: 571029081294620206
+    second: lasers 1 reverb sprite sheet_55
+  - first:
+      213: 7813154584184027330
+    second: lasers 1 reverb sprite sheet_56
+  - first:
+      213: -6470771725495041285
+    second: lasers 1 reverb sprite sheet_57
+  - first:
+      213: -7657368209112483718
+    second: lasers 1 reverb sprite sheet_58
+  - first:
+      213: 5905080811760255781
+    second: lasers 1 reverb sprite sheet_59
+  - first:
+      213: -6183706557178753868
+    second: lasers 1 reverb sprite sheet_60
+  - first:
+      213: -8300531524496724325
+    second: lasers 1 reverb sprite sheet_61
+  - first:
+      213: 8714233391531149556
+    second: lasers 1 reverb sprite sheet_62
+  - first:
+      213: -8977511035931080574
+    second: lasers 1 reverb sprite sheet_63
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +232,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +263,1293 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da0b35e180d71520800000000000000
+      internalID: 2672834160182889171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9ad6cfed33d7230800000000000000
+      internalID: 3638121106796030394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa828ef9d5e92e0800000000000000
+      internalID: -2117151833441391892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e9ec36fd8cb9470800000000000000
+      internalID: 8402530391567539747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c39d87fbace907d0800000000000000
+      internalID: -2951567857427835959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac80318a2cd038f0800000000000000
+      internalID: -562707878307132248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d4d2a15847e4540800000000000000
+      internalID: 4994057151819107631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 2354
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e0801ab2f7cdde0800000000000000
+      internalID: -1307029966482305503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165bcc1349be966b0800000000000000
+      internalID: -5302448064528861855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2497b0ad40a3870800000000000000
+      internalID: 8663242167742448313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9275ec4c922cd9c0800000000000000
+      internalID: -3901205122509344101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e8b5095c0a14c40800000000000000
+      internalID: 5494849790759636622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e337d0dc448a8ae0800000000000000
+      internalID: -1546278056592198685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d1cdb1fc741af40800000000000000
+      internalID: 5737946355097935161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ccf0775f05781b0800000000000000
+      internalID: -5654461791945634813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 2030
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6bdee33f72be8d0800000000000000
+      internalID: -2816113216303810845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2228a1a1bba3210800000000000000
+      internalID: 1313567962120200901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299b6631695b61fe0800000000000000
+      internalID: -1218586992981919342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea14e76f46b7bfd0800000000000000
+      internalID: -2326190230351897885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111732568ae1bbd50800000000000000
+      internalID: 6754025774772351249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d18993ddc6b1fd0800000000000000
+      internalID: -2370181081470591708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4325a5084f78ebf0800000000000000
+      internalID: -294845828283686070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69afe3d5c40a23b0800000000000000
+      internalID: -5536607544187836054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1706
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7527f59910150cba0800000000000000
+      internalID: -6070763230385442217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef1a0f4419945360800000000000000
+      internalID: 7157514020303020004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b311b5e936f37540800000000000000
+      internalID: 5004614339465909173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc80d12a647e0f60800000000000000
+      internalID: 8002461587066621139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b44e53dfbf0ecc40800000000000000
+      internalID: 5534378308644259001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e4cbdd747950ad0800000000000000
+      internalID: -2736614863639130572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a0d85130d10f300800000000000000
+      internalID: 283758675608013334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78717efabf70e77b0800000000000000
+      internalID: -5224729740133853305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1382
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7824deaae65f3850800000000000000
+      internalID: 6358896764825905277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b5b7f1e5a71df30800000000000000
+      internalID: 4598591239195679622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_33
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9af3d7a0ae45010800000000000000
+      internalID: 1176822733422438843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afed8ff248f5ab50800000000000000
+      internalID: 6603957395247722409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf53ed4839d2f4750800000000000000
+      internalID: 6291297316072470012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84462186508e6f60800000000000000
+      internalID: 8029496294670484620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e26a7dadd694ead0800000000000000
+      internalID: -2673846399908814110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054ae098435da8820800000000000000
+      internalID: 2921381729917641808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_39
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1058
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a050847d5afb230800000000000000
+      internalID: 3656823766492973724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa5e9b879677fc00800000000000000
+      internalID: 934345840957217528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_41
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f635a8adad9274a0800000000000000
+      internalID: -6597037134960052494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134a4adbbf6953ca0800000000000000
+      internalID: -6037753717457640399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e65c2ad8a84a0dd0800000000000000
+      internalID: -2519121151508326683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763b21c177032eda0800000000000000
+      internalID: -5917113672281181337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72367443db62d40d0800000000000000
+      internalID: -3437048346546052313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_46
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550a9f6793fd575e0800000000000000
+      internalID: -1912377028846706603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_47
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 734
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251344e1f689658a0800000000000000
+      internalID: -6316693824323964590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f311339d0df9a00800000000000000
+      internalID: 765560092959522625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_49
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60f746a49df56930800000000000000
+      internalID: 4135990647696388205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3688bd4717fa0260800000000000000
+      internalID: 7064730644944291391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0c800f4118a5e50800000000000000
+      internalID: 6798888514395619500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07d64037acd828d0800000000000000
+      internalID: -2870802151821093106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb4e6c50d126d820800000000000000
+      internalID: 2942576585320844224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_54
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d1be196b400eb70800000000000000
+      internalID: 8926139643626986768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_55
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 410
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26cbfa8ce3bce700800000000000000
+      internalID: 571029081294620206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8f08dc2b6ed6c60800000000000000
+      internalID: 7813154584184027330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_57
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 86
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf20a3736633336a0800000000000000
+      internalID: -6470771725495041285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 86
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a783b7d2f209bb590800000000000000
+      internalID: -7657368209112483718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasers 1 reverb sprite sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 86
+        width: 575
+        height: 324
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52302fa36bf03f150800000000000000
+      internalID: 5905080811760255781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
