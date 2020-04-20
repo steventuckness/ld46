@@ -2283,7 +2283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dancerPrefabs:
   - {fileID: 4658807369483743325, guid: 4ac3466341e709d4386ae254ca66d8b2, type: 3}
-  - {fileID: 4658807369483743325, guid: 4ac3466341e709d4386ae254ca66d8b2, type: 3}
+  - {fileID: 4387524840052575803, guid: c0dbc54b910b5854f9a383f3892ac05f, type: 3}
+  - {fileID: 4035550845012281436, guid: 802c562700cefff4f907f7eaae771edb, type: 3}
+  - {fileID: 2108701870324625985, guid: 275ea3cf0a60f784287682a0cc58de1d, type: 3}
   maxDancers: 10
   hypePerDancer: 10
   dancerSpawnArea: {fileID: 1245362586}
