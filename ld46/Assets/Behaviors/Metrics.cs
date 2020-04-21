@@ -28,9 +28,9 @@ public class Metrics : MonoBehaviour
 
     public float startingHype = 41f;
     float hype;
-    public float hypeDecrementFactor = 10f;
+    public float hypeDecrementFactor = 8f;
     private float hypeDecrementStartDelay = 10f;
-    private float hypeDecrementTimeInterval = 5f;
+    private float hypeDecrementTimeInterval = 2.5f;
 
     public event Action<float> HypeUpdated = delegate { };
 

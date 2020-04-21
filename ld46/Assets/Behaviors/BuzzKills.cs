@@ -22,7 +22,7 @@ public class BuzzKills : MonoBehaviour
         "Global Warming!",
         "Mama bear showed up!"
     };
-    public int buzzKillHypeSubtraction = 10;
+    public int buzzKillHypeSubtraction = 7;
 
     private float timer = 0.0f;
     private string currentBuzzKillMessage = string.Empty;

@@ -207,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
       propertyPath: hypeDecrementFactor
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2262480505305069314, guid: c998ec772ff49d64aa92bafee4a5bc5d,
         type: 3}
@@ -3714,7 +3714,7 @@ MonoBehaviour:
   - The cops have been called!
   - Global Warming!
   - Mama bear showed up!
-  buzzKillHypeSubtraction: 10
+  buzzKillHypeSubtraction: 7
 --- !u!82 &1397721513
 AudioSource:
   m_ObjectHideFlags: 0
