@@ -847,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282.11, y: -207.4}
+  m_AnchoredPosition: {x: 265.4, y: -194.38}
   m_SizeDelta: {x: 181.25974, y: 15.458012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223786579
@@ -870,7 +870,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a328433ff6c2e64bbd0675b9cfd6b95, type: 3}
-    m_FontSize: 12
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2060,8 +2060,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292.73, y: -109.03}
-  m_SizeDelta: {x: 159.9996, y: 16.246788}
+  m_AnchoredPosition: {x: 289.63, y: 208.7}
+  m_SizeDelta: {x: 196.48965, y: 20.042221}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538372791
 MonoBehaviour:
@@ -2083,10 +2083,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a328433ff6c2e64bbd0675b9cfd6b95, type: 3}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 2
     m_AlignByGeometry: 0
@@ -2993,8 +2993,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -147.20001, y: 141.22}
-  m_SizeDelta: {x: 122.648315, y: 15.749939}
+  m_AnchoredPosition: {x: -163.85, y: 131.72}
+  m_SizeDelta: {x: 113.53749, y: 16.508999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032109343
 MonoBehaviour:
@@ -3016,7 +3016,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a328433ff6c2e64bbd0675b9cfd6b95, type: 3}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -4269,8 +4269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.49400002}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282.09, y: -184.29999}
-  m_SizeDelta: {x: 181.27713, y: 30.07249}
+  m_AnchoredPosition: {x: 263.49, y: -176}
+  m_SizeDelta: {x: 177.48093, y: 30.07249}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539223885
 MonoBehaviour:
